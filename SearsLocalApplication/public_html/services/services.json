@@ -1,0 +1,29 @@
+[
+    {
+        "id":"brakes",
+        "name": "Brakes",
+        "snippet":"Stay on top of maintenance and extend your vehicle's life, make driving safer and more enjoyable and save money in costly repairs",
+        "imageUrl": "../img/services/brakes.jpeg"
+    },
+    
+    {
+        "id":"steering",
+        "name": "Steering & Suspension",
+        "snippet":"You take steering for granted until something goes wrong. If you feel a lot of vibration through your steering wheel,it's time to visit a professional mechanic",
+        "imageUrl": "../img/services/steering.jpeg"
+    },
+    
+    {
+        "id":"maintenance",
+        "name": "Maintenance & Fluids",
+        "snippet":"Stay on top of maintenance and extend your vehicle's life, make driving safer and more enjoyable and save money in costly repairs",
+        "imageUrl": "../img/services/fluids.jpeg"
+    },
+    
+    {
+        "id":"charging",
+        "name": "Starting & Charging",
+        "snippet":"You turn the ignition and your car won't start. Your dashboard light may signal a problem or a high-pitched squeal could be a clue",
+        "imageUrl": "../img/services/charging.jpeg"
+    }
+]

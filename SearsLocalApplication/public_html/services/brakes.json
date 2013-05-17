@@ -1,0 +1,47 @@
+{
+    "description":"You turn the ignition and your car won't start. Your dashboard light may signal a problem or a high-pitched squeal could be a clue. More ominous sounds may include sluggish cranking or loud grinding. These are all signs that could indicate something as simple as a low-charged battery to a damaged starter. Take your vehicle to certified mechanics at a reputable auto center to take care of these issues",
+    "imageUrl":"../img/services/brakes.jpeg",
+    "price":"100 USD",
+    "rating":"4",
+    "videoUrl":"http://www.youtube.com/watch?v=Gr1PaUyDFxQ",
+
+    "details":
+    [
+        {
+            "description":"Dash indicator light on may mean",
+            "options":"Bad battery Bad alternator/regulator Bad connections/cables"
+        },
+        {
+            "description":"Squealing may mean",
+            "options":"Improper belt tension Worn/damaged belt Faulty belt tensioner Defective alternator pulley or locked shaft"
+        }
+    ],
+    "review":
+    [
+        {
+            "description":"",
+            "options":"Batteries need periodic inspection & cleaning to ensure proper operation"
+        },
+        {
+            "description":"",
+            "options":"Loose or corroded cable ends may prevent your battery from charging fully"
+        }
+    ],
+    "otherservices":
+    [
+        {
+            "id":"maintenance",
+            "name": "Maintenance & Fluids",
+            "snippet":"Stay on top of maintenance and extend your vehicle's life, make driving safer and more enjoyable and save money in costly repairs",
+            "imageUrl": "../img/services/fluids.jpeg"
+        },
+        
+        {
+            "id":"charging",
+            "name": "Starting & Charging",
+            "snippet":"You turn the ignition and your car won't start. Your dashboard light may signal a problem or a high-pitched squeal could be a clue",
+            "imageUrl": "../img/services/charging.jpeg"
+        }
+    ]
+            
+}
