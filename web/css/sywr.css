@@ -1,0 +1,13 @@
+#sign-in-form-container{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin: 0 0 0 -125px;
+
+}
+
+.field-label{
+    color: #000000;
+}

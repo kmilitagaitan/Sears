@@ -1,0 +1,67 @@
+{
+    "globalNavigation": {
+        "verticals": [{
+                "vertical": {
+                    "displayName": "Appliances",
+                    "urlName": "Appliances",
+                    "categories": [{
+                            "category": {
+                                "displayName": "Refrigerators",
+                                "urlName": "Refrigerators",
+                                "imgURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_746352912"
+                            }
+                        }, {
+                            "category": {
+                                "displayName": "Dishwashers",
+                                "urlName": "Dishwashers",
+                                "imgURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_180420801"
+                            }
+                        }, {
+                            "category": {
+                                "displayName": "Small Kitchen Appliances",
+                                "urlName": "Small Kitchen Appliances",
+                                "imgURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_182821301"
+                            }
+                        }, {
+                            "category": {
+                                "displayName": "Microwaves",
+                                "urlName": "Microwaves",
+                                "imgURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_175152101"
+                            }
+                        }, {
+                            "category": {
+                                "displayName": "Vacuums & Floor Care",
+                                "urlName": "Vacuums & Floor Care",
+                                "imgURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_171366401"
+                            }
+                        }, {
+                            "category": {
+                                "displayName": "Accessories",
+                                "urlName": "Accessories",
+                                "imgURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_617729001"
+                            }
+                        }, {
+                            "category": {
+                                "displayName": "Air Conditioners",
+                                "urlName": "Air Conditioners",
+                                "imgURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_257552701"
+                            }
+                        }, {
+                            "category": {
+                                "displayName": "Sewing & Garment Care",
+                                "urlName": "Sewing & Garment Care",
+                                "imgURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_547277101"
+                            }
+                        }, {
+                            "category": {
+                                "displayName": "Ranges",
+                                "urlName": "Ranges",
+                                "imgURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_182019301"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

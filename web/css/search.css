@@ -1,0 +1,186 @@
+/* 
+# Search styles 
+### Search Input input[type=text]
+```
+<div class="searchBar">
+  <div id="search-box">
+    <form class="search-form" id="keywordForm" name="keywordForm" action="/search" method="get" target="_top">
+      <div id="inputSearchBox">
+        <input type="text" id="keyword" name="keyword" placeholder="Search..." onfocus="javascript:lazyScripts();">
+      </div>
+    </form>
+  </div>
+</div>
+```
+### Search Input input[type=search]
+```
+<div class="searchBar">
+  <div id="search-box">
+    <form class="search-form" id="keywordForm" name="keywordForm" action="/search" method="get" target="_top">
+      <div id="inputSearchBox">
+        <input type="search" id="keyword" name="keyword" placeholder="Search..." onfocus="javascript:lazyScripts();">
+      </div>
+    </form>
+  </div>
+</div>
+```
+### Scan Button a.form-button
+```
+<div class="searchBar">
+  <div id="barcode-box">
+    <form class="barcode-form">
+      <a href="#" class="form-button"><span class="">Scan</span><span class="app-icon app-icon-scan"></span></a>
+    </form>
+  </div>
+</div>
+```
+### Scan Button input[stype=button]
+```
+<div class="searchBar">
+  <div id="barcode-box">
+    <form class="barcode-form">
+      <input type="button" class="app-icon app-icon-scan" value="Scan" name="scan">
+    </form>
+  </div>
+</div>
+```
+*/
+#searchBar {
+     /*padding-top: 7px;*/
+}
+#searchBar input {
+    /*width:100% !important;*/
+}
+#search-box,
+#inputSearchBox,
+#barcode-box {
+    float:left;
+    margin:10px 10px 0;
+    padding:0;
+}
+#search-box,
+#inputSearchBox {
+    width:60%;
+    margin-right:0;
+}
+#barcode-box {
+    float:right;
+    width:32.5%;
+    margin-left:0;
+}
+#search-box #keywordForm,
+#inputSearchBox #keywordForm,
+#search-box .search-form,
+#inputSearchBox .search-form,
+#barcode-box .barcode-form {
+    /*width: 90%;*/
+    /*margin:0 5%;*/
+    margin:0;
+    padding:0;
+    position: relative;
+}
+#search-box #keywordForm #keyword,
+#inputSearchBox #keywordForm #keyword,
+#search-box .search-form #keyword,
+#inputSearchBox .search-form #keyword,
+#barcode-box .barcode-form #scan {
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+#barcode-box  #scan-cancel {
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+#barcode-box .barcode-form #scan span {
+    height: 30px;
+    line-height: 30px;
+}
+#keyword {padding-left:2em;}
+#keyword-icon {position: absolute; top:0.03125em; left:0; z-index:1000; color:#ccc; line-height:30px; height:30px; padding:0;}
+
+#scan .button-icon {font-size: 2em;}
+/* ## Search History & Autocomplete styles */
+
+#inputSearchBox #keywordForm #cross-icon{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    position:absolute;
+    left: 75%;
+    float: right;
+    background-color:white;
+    font-size:12pt;
+    cursor: pointer;
+    top: 0.4em;
+    color: #999;
+}
+#searchHistory,
+#searchAutocomplete {
+    position:absolute;
+    top:60px;
+    left:0;
+    z-index: 1001;
+    width: 100%; 
+    text-align: center; 
+    display:none; 
+    padding: 0.5em;
+    background:rgba(255,255,255,0.95);
+}
+#searchHistory {}
+#searchAutocomplete {}
+#searchHistory #noHistory,
+#searchHistory #cancelHistory,
+#searchHistory #clearHistory {
+  /*display:none; float:center; margin:10px auto;*/
+  display:none; 
+  float:left; 
+  margin:0.5em;
+}
+
+#searchProducts {
+    display: block;
+    position:static;
+    top:10px;
+    left:0;
+    z-index:1001;
+    background:#fff;
+}
+
+#productCount {}
+
+#searchMarketplace {}
+
+#searchProducts {}
+#searchProducts ul,
+#searchProducts li {
+    list-style: none;
+    width: 96%;
+    clear: both;
+    margin-left:2%;
+}
+.searchProductsDesc {float:left;}
+.searchProductsDesc {width:60%; text-align:left;}
+.searchItemImage {float:left; text-align:right; margin-right:5%;}
+.searchItemImage img {width:80px; height:80px;}
+ 
+.searchItemText {
+    font-size: .9em;
+    font-weight: 300;
+}
+.searchItemText a {
+    color: #333;
+}
+.searchItemText p {
+    margin: 0;
+}
+#searchItemPrice {
+  font-size:.8em;
+}
+
+.searchItemrating {
+    font-weight: bold;
+}

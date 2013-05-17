@@ -1,0 +1,211 @@
+/* # Carousel styles */
+/* ## Carousel Container styles */
+/*
+```
+<div>Sample Code</div>
+```
+*/
+.carousel {width: 100%; position: relative; overflow: hidden; display: block;}
+.carousel-swipeview {}
+.carousel-iscroll {}
+.carousel-content ul {list-style: none; z-index: 2;}
+#cycle-carousel-nav, .carousel-nav {z-index: 3;}
+
+/* ## Hero Carousel styles */
+/*
+```
+<div>Sample Code</div>
+```
+*/
+#carousel-hero2 {
+    z-index: 3;
+    height:295px; 
+    background:#fff;
+    /*background:rgba(255,0,255,0.5);*//*magenta*/
+    padding:15px 15px 0; margin:0; text-align:center;
+}
+#carousel-hero2 .carousel-content {
+    width:290px; height:auto;
+    position: relative; top:0;
+    text-align: center; padding:0; margin:0 auto; 
+    /*overflow: hidden;*/
+    /*background:rgba(255,255,0,0.5);*//*yellow*/
+}
+#cycle-carousel-nav, #carousel-hero2 .carousel-nav {
+    width:290px; height:15px;
+    position: relative; top:0;
+    text-align: center; padding:0; margin:0 auto;
+}
+#carousel-hero2 .carousel-content ul {
+    list-style:none;
+    /*float:left;*/
+    position: relative;
+    /*width:1500px;*/
+    width:3000px;
+    height:265px;
+    padding:0;
+    margin:0;
+    border:none;
+    /*background:rgba(0,255,255,0.5);*//*cyan*/
+}
+#carousel-hero2 .carousel-content ul li {
+    float:left;
+    position: relative;
+    width:290px; height:250px;
+    margin:0;
+    padding:0;
+    text-align:center;
+    border:none;
+    /*background:#fff;*/
+    overflow:hidden;
+    /*opacity: 0.5;*/
+}
+.hero-main,
+.hero-extra,
+.hero-disclaimer,
+.hero-code-disclaimer {
+    z-index: 1;
+    width:290px; height:250px;
+    position:relative;
+    text-align: center;
+}
+.hero-main {
+    width:180px; height:180px;
+    /*opacity: 0.5;*/
+    background: no-repeat 50% 50% transparent;
+    /*background-size:cover;*//* make background image fill space */
+    background-size:contain;/* make background image fit in space */
+    margin: 0 auto;
+}
+
+.hero-disclaimer {display: none;}
+.hero-code-disclaimer {display: none;}
+.hero-main h1,
+.hero-extra h1 {
+    color: #333;
+    font-size: 1.25em; /* 20/16 */
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+.hero-main h2,
+.hero-extra h2 {
+    color: #333;
+    font-size: 1em; /* 16/16 */
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+.hero-main .details,
+.hero-extra .details {
+    color: #666;
+    font-size: 0.6875em; /* 11/16 */
+    font-weight: 400;
+    margin-top: -1em;
+    margin-bottom: 0.5em;
+}
+.hero-main img {
+    width:180px; height:180px;
+}
+.hero-extra {
+    z-index: 2;
+    width:80%; height:25%;
+    position:absolute; top:180px; left:10%;
+}
+
+/* ### Test styles for hero data */
+/*
+```
+<div>Sample Code</div>
+```
+*/
+.hero-disclaimer,
+.hero-code-disclaimer {
+    z-index: 2;
+    width:90%; height:50%;
+    position:absolute; top:45%; left:5%;
+}
+.hero-disclaimer,
+.hero-code-disclaimer {
+    width:40%; height:40%;
+    top:50%; left:10%;
+    display: none; /* hide extra data */
+}
+.hero-disclaimer {z-index: 3; /*background:rgba(255,0,0,0.25);*/}
+.hero-code-disclaimer {z-index: 4; /*background:rgba(0,0,255,0.25);*/ left:50%;}
+
+/*
+```
+<div>Sample Code</div>
+```
+*/
+#cycle-carousel-nav,
+#carousel-hero2 .carousel-nav ul {
+    list-style:none;
+    position: relative;
+    width:25%;
+    height:15px;
+    padding:0;
+    margin:0 auto;
+    border:none;
+    background: transparent;
+    border-radius:7px;
+}
+#cycle-carousel-nav a,
+#carousel-hero2 .carousel-nav ul li {
+    float:left;
+    position:relative;
+    width:15%; height:10px;
+    margin:0 2.5%;
+    padding:0;
+    background:rgba(0,0,0,0.125);
+    text-align:center;
+    text-indent: 100%;
+    overflow: hidden;
+    border:none;
+    border-radius:5px;
+}
+#cycle-carousel-nav a.activeSlide {background:rgba(28,63,149,1);}
+
+
+/* ## Promo Carousel styles */
+/*
+```
+<div>Sample Code</div>
+```
+*/
+#carousel-promos {
+    z-index:1;
+    /*height: 138px;*/
+    margin: 0;
+}
+#carousel-promos .carousel-content {
+    /*width:200px; height:200px; */
+    position: relative; top:0; 
+    text-align: center; 
+    padding:0; margin:0; 
+    /*overflow: hidden;*/
+}
+#carousel-promos .carousel-content ul {
+    list-style:none;
+    position: relative;
+    /*left:-88px;*/
+    width:580px; /*height:200px;*/
+    padding:0; margin:0;
+    border:none;
+    /*background:rgba(255,0,255,0.5);*/
+    background:transparent;
+}
+#carousel-promos .carousel-content ul li {
+    float:left;
+    position: relative;
+    width:135px; height:107px;
+    margin:15px 5px;
+    padding:0;
+    text-align:center;
+    border:none;
+    background:transparent;
+    /*box-shadow: 0 0.25em 0.5em 0em rgba(0,0,0,0.5);*/
+    overflow:hidden;
+}
+#carousel-promos .carousel-content ul li img {
+    width:135px; height:107px;
+}

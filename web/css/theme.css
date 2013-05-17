@@ -1,0 +1,120 @@
+/* # Themes for branding */
+
+/* ## Generic Theme Features */
+/* ### Background Patterns */
+.texture {background: url("../images/bg/gray_jean/gray_jean.png") repeat scroll 0 0 #808080;}
+.retina .texture {background: url("../images/bg/gray_jean/gray_jean_@2x.png") repeat scroll 0 0 #808080;}
+
+/* ## Logo */
+/* ### Default Theme */
+/*
+```
+<div class="box-test">
+<div class="">
+  <div id="header-wrapper">
+  <div class="header-button logo"><span class="">Logo</span></div>
+</div>
+</div>
+</div>
+```
+*/
+.header-button.logo {background:url('../images/logo-default.png') no-repeat 1em 50%;
+background-size: auto 60%;
+}
+
+/* ### Sears Theme */
+/*
+```
+<div class="box-test">
+<div class="sears">
+  <div id="header-wrapper">
+    <div class="header-button logo"><span class="">Logo</span></div>
+  </div>
+</div>
+</div>
+```
+*/
+.sears .header-button.logo {background-image:url('../images/logo-sears.png');
+}
+
+/* ### Kmart Theme */
+/*
+```
+<div class="box-test">
+<div class="kmart">
+    <div id="header-wrapper">
+      <div class="header-button logo"><span class="">Logo</span></div>
+    </div>
+</div>
+</div>
+```
+*/
+.kmart .header-button.logo {background-image:url('../images/logo-kmart.png');
+}
+
+/* ## Buttons */
+/* ### Sears Theme */
+/* #### Active State */
+/*
+```
+<div class="sears">
+  <div class="active"><span class="button-text">Active State</span></div>
+  <div class="menu-item active"><span class="button-text">Menu Item - Active State</span></div>
+</div>
+```
+*/
+.sears .active {/*background:blue;*/} /* blue active state */
+.sears .menu-item.active {/*background:blue;*/} /* blue active state */
+
+/* ### Kmart Theme */
+/* #### Active State */
+/*
+```
+<div class="kmart">
+  <div class="active"><span class="button-text">Active State</span></div>
+  <div class="menu-item active"><span class="button-text">Menu Item - Active State</span></div>
+</div>
+```
+*/
+.kmart .active {/*background:red;*/} /* red active state */
+.kmart .menu-item.active {/*background:red;*/} /* red active state */
+
+/* ## Menu */
+/* ### Default Theme */
+/* #### Current State */
+
+.menu-item.current .button-text {color:#fff}
+.menu-item.current {
+    color: white !important;
+    background: -webkit-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -o-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -ms-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -moz-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: linear-gradient(to bottom, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+}
+
+/* ### Sears Theme */
+/* #### Current State */
+
+.sears .menu-item.current {
+    /*color: white !important;*/
+    background: -webkit-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -o-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -ms-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -moz-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: linear-gradient(to bottom, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+}
+
+/* ### Kmart Theme */
+/* #### Current State */
+
+.kmart .menu-item.current {
+    /*color: white !important;*/
+    background:red;
+    /*background: -webkit-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -o-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -ms-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -moz-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: linear-gradient(to bottom, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);*/
+}
+

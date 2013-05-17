@@ -1,0 +1,39 @@
+<style>.qr {position: absolute; top:100px; z-index: 10000;}</style>
+<!--<script src="js/searchscript.js"></script>-->
+<div ng-controller="SearchCtrl">
+    <div class="" id="searchBar">
+        <!-- <div id="search-box"> -->
+        <div id="inputSearchBox">
+            <form ng-submit="addTodo()" id="keywordForm">
+                <input type="text" id="keyword" name="keyword" ng-model="keyword" placeholder="Search..." style="" onfocus="javascript:getCachedData();" onKeyUp="javascript:getCachedData(event);">
+                <span id="keyword-icon" class="sf-icon-zoom button-icon small" style=""></span>
+                <!-- <span id="keyword-icon" data-icon="&#x25;" class="button-icon small" style="position: absolute; top:-0.0625em; left:0; z-index:1000; color:#ccc; line-height:30px; height:30px; padding:0;"></span> -->
+                <input type="hidden" id="vertName" name="vertName" value="">
+                <input type="hidden" id="vName" name="vName" value="">
+                <input type="hidden" id="autofillFilter" name="autofillFilter" value="">
+                <span data-icon="x" id="cross-icon" ng-click="crossClicked()" ></span>
+            </form>
+        </div>
+        <!-- </div> -->
+        <div id="barcode-box">
+            <!-- Alternate Barcode Scanner #1 -->
+            <form class="barcode-form">
+            <a href="pic2shop://scan?callback=https://devswordfish.herokuapp.com/%23/search_results/keyword={CODE}" class="form-button" id="scan">
+                    <span class="button-text left">Scan</span>
+                    <span class="button-icon-multi"><span class="button-icon sf-icon-scan"></span></span>
+                    <span class="button-icon-multi"><span class="button-icon sf-icon-barcode"></span></span>
+                </a>
+            </form>
+	    <input type="button" class="app-icon app-icon-scan" value="Cancel" name="scan" id="scan-cancel" ng-click="cancelClicked()">
+        </div>
+    </div>
+    <nav id="searchAutocomplete">
+        <a ng-repeat="data in cachedData" class="menu-item" ng-click="searchApiCall(data)"><span class="button-text">{{data}}</span></a>
+        <a ng-repeat="autodata in autoArray" class="menu-item" ng-click="searchApiCall(autodata)"><span class="button-text">{{autodata}}</span></a>
+    </nav>
+    <div id="searchHistory" style="text-align:center;">
+        <input type="button" class="secondary" value="No Search History" id="noHistory">
+        <input type="button" class="primary" value="Clear Search History" id="clearHistory" ng-click="clearHistory()">
+        <input type="button" class="secondary" value="Cancel" id="cancelHistory" ng-click="cancelHistory()">
+    </div>
+</div>

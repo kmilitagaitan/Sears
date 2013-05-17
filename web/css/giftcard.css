@@ -1,0 +1,371 @@
+.magnify {
+    outline: 6px solid  darkorange;
+    -moz-border-radius: 50px 50px 50px 50px;
+/*    width: 100%;
+    height: 100%;
+    background-color: white;
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);*/
+/*    -webkit-transition: all 1s;
+    -moz-transition: all 1s ;
+    -o-transition:  all 1s ;*/
+}
+
+.original {
+/*    width: 100%;
+    height: 100%;
+    background-color: white;*/
+
+}
+.magnify:active {
+/*    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);*/
+}
+.check-balance-main{
+	height:100%;
+	padding-bottom:10%;
+	background-color: white;
+}
+.gc-header{
+	height:55px; 
+	background:url('../images/bg/kindajean/kindajean.png');
+}
+
+.gc-header-text{
+	font-weight: bold;
+	text-align:center;
+}
+
+.full-width{
+	width:100%;
+}
+
+.gc-label, .gc-captcha-div{
+	margin-left: 2%;
+	width:100%
+}
+.gc-label-pin{
+	margin-left: 2%;
+}
+.gc-input-gcnumber{
+	margin-left: 2%;
+	width:90%;
+}
+.gc-pin{
+	margin-top: 1%;
+	display: block;
+}
+.gc-help-img-container, .gc-captcha-verification{
+	display:inline-block;
+	width:100%;
+}
+.gc-input-pin{
+	margin-top:-2%;
+	margin-left: 2%;
+	width:35%;
+	clear: both;
+}
+.gc-help-image{
+	width:50%;
+	margin-left:4%;
+	margin-top:-7%;
+	
+}
+.gc-captcha{
+	width:100%; 
+	padding-top: 2%;
+}
+.gc-verification-text{
+	float:left;
+	padding-top:2%;
+	padding-left: 2%;
+	width:50%;
+	font-size: 0.9em;
+}
+.gc-captcha-input{
+	margin-top:1%;
+	width:40%;
+	font-size:12px;	
+}
+.reload-captcha{
+	width: 50% !important;
+	float:left !important;
+	text-align: left !important;
+	border-radius: 0.25em;
+	color: #333;
+	box-shadow: none;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	margin-top:1%;
+	background: none !important;
+	color: #00F !important;
+	text-decoration: underline;
+	padding-left:2% !important;
+}
+.check-card{
+	float:none;
+	margin-top:2%;
+}
+
+.grey-page-background{
+padding-bottom: 2%;
+padding-top: 3%;
+background:url('../images/bg/kindajean/kindajean.png');
+}
+
+.img-container
+{
+padding-top: 5%;
+padding-bottom: 5%;
+}
+
+.img
+{
+width:70%;
+}
+
+.label-container
+{
+width:100%;
+display:block-inline;
+}
+.gclabelstylelefttxt
+{
+width:25%;
+display:inline;
+float:left;
+
+}
+.gclabelstyleleft
+{
+width:25%;
+display:inline;
+float:left;
+font-weight:bold;
+}
+.gclabelstylecentertxt
+{
+width:25%;
+display:inline;
+}
+.gclabelstylecenter
+{
+width:25%;
+display:inline;
+font-weight:bold;
+}
+.gclabelstylerighttxt
+{
+width:25%;
+display:inline;
+float:right;
+
+}
+
+.gclabelstyleright
+{
+width:25%;
+display:inline;
+float:right;
+font-weight:bold;
+}
+
+.pbimg{
+width:140px;
+height:50px;
+margin-left:auto;
+margin-right:auto;
+margin-top:5%;
+margin-bottom:5%;
+float:none;
+}
+
+.gctxtcontainer
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+max-width:90%;
+text-align:center;
+margin-top:5%;
+}
+.reedemtxt
+{
+ font-size:17px;
+ text-align:left;
+}
+.btncontainer
+{
+padding-top:5%;
+padding-bottom:5%
+}
+
+.shopbutton
+{
+width:50%;
+font-weight: bold;
+font-size:15px;
+float:none}
+
+.chkbalbutton
+{width:40%;
+font-weight: bold;
+font-size:15px;
+float:none}
+
+.gcresult-background
+{
+width:100%;
+height:100%;
+background:url('../images/bg/kindajean/kindajean.png');
+padding-bottom: 15%;
+
+}
+
+.gcresultheader
+{
+width:100%;
+display:block-inline;
+padding: 12px;
+}
+
+.bkbtn
+{
+margin-top:3%;
+position:absolute;
+}
+
+.gcbalancelbl
+{
+width:70%;
+font-weight:bold;
+text-align:center;
+float:none;
+font-size:22px;
+margin-top: 1% !important;
+}
+
+.gcbalbackground
+{
+width:100%;margin-top:2%;float:none; align:center;
+background-color: #ffffff;box-shadow: 0px 5px 10px #888888;
+padding-bottom:2%
+}
+
+.gculstyle
+{
+margin-left:0%;
+list-style-type:none;
+padding-top:2%;
+}
+
+.gc-ur-bal-txt
+{
+font-color: #cccccc;
+margin-left: 10px;
+font-size:18px;
+padding-top: 5%;
+
+}
+
+.gc-bal
+{font-weight: bold;
+margin-left: 10px;
+font-size:18px;}
+
+.bal-tody
+{
+font-color: #cccccc;
+margin-left: 10px;
+font-size:18px;
+}
+
+.gc-for-number
+{
+font-color: #cccccc;margin-left: 10px;font-size:18px;
+}
+
+.gc-num
+{
+color: #000000;font-weight: bold;
+}
+
+.gc-result-footer
+{
+width:100%;margin-top:5%;
+}
+
+.chk-another-card
+{
+float:none;font-size:18px;font-weight:normal;
+}
+
+.gc-pb-footer
+{
+margin-bottom:2%;margin-top:2%
+}
+
+.bk-button {
+  background-image: url('../images/backbutton.png') ;
+  cursor:pointer;
+  }
+.pb-btn
+{
+	width:140px;
+	height:50px;
+  
+}
+
+.enlarge {
+    
+   
+    background-color: white;
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s ;
+    -o-transition:  all 1s ;
+}
+
+.gcinput
+{
+	width:100%;
+	display:inline-block;
+}
+.captchaerrlbl
+{
+	margin-top:1%;
+	margin-left:1%;
+}
+
+.errimggc
+{
+	width:6%;
+	margin-top:1%;
+	display:none;
+}
+.errimgpin
+{
+	width:6%;
+	margin-top:-7%;
+	display:none;
+}
+
+.errimgcap
+{
+	width:6%;
+	margin-top:3%;
+	display:none;
+}
+
+.gcpin{
+	display:inline-block;
+}

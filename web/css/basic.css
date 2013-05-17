@@ -1,0 +1,759 @@
+
+/* 
+# Basic styles
+*/
+
+/* 
+## Text
+*/
+body {
+    width:100%; height:100%;
+    background-color:#ccc;
+    font-family:"Open Sans",sans-serif !important;
+    font-weight:400;
+    font-size:100%;
+    color:#202020;
+    padding:0;
+    margin:0;
+}
+p, h1, h2, h3, h4, h5, h6, ul, ol, li,
+input, form, select, option, button,
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {font-family:"Open Sans",sans-serif !important;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {clear:both; display:block;}
+
+/* 
+### Font Weights
+```
+<p style="font-weight:700">Open Sans Bold (700)</p>
+<p style="font-weight:600">Open Sans Semi-Bold (600)</p>
+<p style="font-weight:400">Open Sans Regular (400)</p>
+<p style="font-weight:400"><i>Open Sans Regular Italic (400, italic)</i></p>
+<p style="font-weight:300">Open Sans Book (300)</p>
+```
+*/
+
+/* 
+### Heading Styles
+```
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+```
+*/
+
+/* 
+### Other Text Styles
+```
+<p>Paragraph text...Lorem <a href="#">ipsum</a> dolor sit amet, consectetur adipisicing elit</p>
+<p>Paragraph text...Lorem <a href="#">ipsum</a> dolor sit amet, consectetur adipisicing elit</p>
+<ul>
+  <li>Unordered List Item 1
+    <ul>
+      <li>Unordered List Item 1</li>
+      <li>Unordered <strong>Bold List Item 2</strong></li>
+      <li>Unordered <em>Italic List Item 3</em></li>
+    </ul>
+  </li>
+  <li>Unordered <strong>Bold List Item 2</strong></li>
+  <li>Unordered <em>Italic List Item 3</em></li>
+</ul>
+<ol>
+  <li>Ordered List Item 1
+    <ol>
+      <li>Ordered List Item 1</li>
+      <li>Ordered <b>Bold List Item 2</b></li>
+      <li>Ordered <i>Italic List Item 3</i></li>
+    </ol>
+  </li>
+  <li>Ordered <b>Bold List Item 2</b></li>
+  <li>Ordered <i>Italic List Item 3</i></li>
+</ol>
+```
+*/
+
+h1, h2, h3, h4, h5, h6 {line-height:1; color:#666; font-weight:700; clear:both;}
+h1 {font-size: 2em;/* 32/16 */}
+h2 {font-size: 1.5em;/* 24/16 */}
+h3 {font-size: 1.25em;/* 20/16 */}
+h4 {font-size: 1.125em;/* 18/16 */}
+h5 {font-size: 1em;/* 16/16 */}
+h6 {font-size: 0.9em;/* 14/16 */}
+
+big {font-size: 1.25em;/* 20/16 */}
+small {font-size: 0.6875em;/* 11/16 */}
+
+p, ol, ul {
+    font-size: 1em;/* 16/16 */
+    line-height: 1;
+    margin-bottom: 1em;
+}
+ol ol, ol ul, ul ul, ul ol {
+    margin-bottom: 0;
+    text-indent: 1em
+}
+
+h2 {}
+h2 span {font-weight: normal;}
+
+a {text-decoration: none;}
+
+strong, b { font-weight: bold;}
+em, i {font-style: italic;}
+
+ul, ol {
+    text-indent: 0;
+    list-style-image: none;
+    list-style-position: inside;
+}
+ul {list-style-type: disc;}
+ol {list-style-type: decimal;}
+ul li, ol li {}
+
+/* 
+### Hyperlink styles 
+```
+<a>Link</a>
+```
+*/
+a:link {/*color:#FF0000;*//* unvisited link */}
+a:visited {/*color:#00FF00;*//* visited link */}
+a:hover {/*color:#FF00FF;*//* mouse over link */}
+a:active {/*color:#0000FF;*//* selected link */}
+
+/* 
+## General Content styles 
+```
+```
+*/
+.content {
+    display:none;
+    margin-top: 1em;
+}
+.error {
+    padding:1em 0.5em;
+    font-weight: bold;
+}
+
+.css-form input.ng-invalid.ng-dirty {
+    /* background-color: #FA787E; */
+    border-color: #FA787E;
+}
+/*
+.css-form input.ng-valid.ng-dirty {
+    background-color: #78FA89;
+} */
+
+.shop-list {list-style: none outside none; margin-left: 0;}
+
+/* 
+## Status Cards styles */
+
+#recommendedProducts ul,
+ul.list-results,
+ul.list-notifications {
+    /*background: #eee;*/
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none outside none;
+    float: left;
+}
+ul.list-results li,
+ul.list-notifications li {background: white; margin:10px; padding: 10px}
+
+ul.nav-notifications {
+    background: lightgreen;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-indent: 0;
+    list-style: none outside none;
+    float: left;
+}
+ul.nav-notifications li {float:left; padding:0 0.5em;}
+
+.read-true {border-left: none}
+.read-false {border-left: 0.5em yellow solid}
+.present-false {opacity: 0.5 !important}
+
+/* 
+## Recommended Products */
+/*
+```
+<div id="recommendedProducts">Recommended Products</div>
+```
+*/
+#recommendedProducts h2 {
+    font-size: 1.35em;
+    text-align: center;
+    padding-top: 1em;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+}
+#recommendedProducts h2 span{
+    font-weight: normal;
+}
+#recommendedProducts ul li {
+    list-style: none;
+    width: 100%;
+    clear: both;
+    display: block;
+    text-align: center;
+    /*margin-bottom: 1em;*/
+    /*padding-bottom: 1em;*/
+    overflow: auto;
+}
+.productListView,
+.recommendedProductThumb,
+.recommendedProductDesc {float:left;}
+.recommendedProductThumb {width:30%; text-align:right; margin-right:5%;}
+.recommendedProductThumb img {width:100px;}
+.recommendedProductDesc {width:60%; text-align:left;}
+.productListView {width:100%; cursor: hand; cursor: pointer;}
+.productImage {
+    width:100px;
+    height: auto;
+}
+.productText {
+    font-size: .9em;
+    font-weight: 300;
+}
+.productText a {
+    color: #333;
+}
+.productText p {
+    margin: 0;
+}
+.productPrice {
+    font-weight: bold;
+}
+
+
+/* 
+## Linear Gradient Spec */
+/*
+
+Demo of a dark blue to lighter blue (top to bottom) linear gradient...
+
+### Fallback
+<pre>
+.gradient {
+    background-color: #1a82f7;
+    background: url(images/linear_bg_2.png);
+    background-repeat: repeat-x;
+}
+<pre>
+
+### Safari 4-5, Chrome 1-9
+<pre>
+.gradient {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
+}
+</pre>
+
+### Safari 5.1+, Chrome 10+
+<pre>
+.gradient {
+    background: -webkit-linear-gradient(to top, #2F2727, #1a82f7);
+}
+</pre>
+
+### Firefox 3.6+
+<pre>
+.gradient {
+    background:    -moz-linear-gradient(to top, #2F2727, #1a82f7);
+}
+</pre>
+
+### IE 10
+<pre>
+.gradient {
+    background:     -ms-linear-gradient(to top, #2F2727, #1a82f7);
+}
+</pre>
+
+### Opera 11.10+
+<pre>
+.gradient {
+    background:      -o-linear-gradient(to top, #2F2727, #1a82f7);
+}
+</pre>
+
+### Official spec
+<pre>
+.gradient {
+    background:         linear-gradient(to top, #2F2727, #1a82f7);
+}
+</pre>
+
+*/
+
+/* 
+## Utility styles 
+*/
+
+/* 
+### Horizontal Rule 
+*/
+
+/*
+```
+<hr>
+```
+*/
+hr {
+    background: -webkit-gradient(radial, center center, 0px, center center, 80%, color-stop(0%,rgba(0,0,0,0.25)), color-stop(80%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 80%); /* Chrome10+,Safari5.1+ */
+    background:    -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 80%); /* FF3.6+ */
+    background:     -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 80%); /* IE10+ */
+    background:      -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 80%); /* Opera 12+ */
+    background:         radial-gradient(ellipse at center, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 80%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border: none;
+    clear: both;
+    height: 2px; width: 100%;
+    padding:0;
+    margin:1em 0;
+}
+
+/* 
+### Overlay 
+*/
+
+/*
+```
+<div class="overlay"></div>
+```
+*/
+.overlay {
+    opacity:0;
+    background:rgba(0,0,0,1); width: 100%; height: 100%;
+    position: absolute; top:0; right:0; bottom:0; left:0;
+    z-index: 1000;
+    display:none;
+}
+.home-view.offset-right .overlay, .home-view.offset-left .overlay {
+    opacity: 0.75;
+    z-index: 1001;    
+}
+.overlay.on {display:block;}
+
+/* 
+### Misc styles 
+*/
+
+.flexibleH {height:auto !important;}
+.left {float:left !important; /*display:inline-block;*/}
+.right {float:right !important; /*display:inline-block;*/}
+
+label,
+input[type='button'],
+.header-button,
+.header-button * {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.name {font-weight: normal;}
+.price {font-weight: bold;}
+.white {color: white !important;}
+.sf-icon-scan {color: red}
+
+/* 
+## Bad Utility styles 
+*/
+
+.mr1em {margin-right:1em;}
+.mlp5em {margin-left:.5em;}
+.pl-special {padding-left: .5em;}
+.displayNone {display:none;}
+
+/* 
+## Partial View styles 
+*/
+/*
+```
+<div class="box-test">
+    <div class="partial">
+        <header>Header</header>
+        <div class="partial-inner">Test</div>
+        <footer>Footer</footer>
+    </div>
+</div>
+```
+*/
+.partial {
+    background-color:#fff;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    min-height: 480px;
+    padding:0;
+    margin:0;
+    text-align:left;
+    clear: both;
+}
+.partial-inner {
+    background-color:#fff;
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    clear: both;
+}
+.partial-status .partial-inner {background:transparent;}
+.partial h1,
+.partial h2,
+.partial h3,
+.partial h4,
+.partial h5,
+.partial h6,
+.partial p,
+.partial ol,
+.partial ul,
+.partial fieldset {
+    width: 90%;
+    padding:0 0.5em;
+    margin:0;
+}
+.partial h2 {padding-top: 20px}
+.partial header,
+.partial footer {
+    min-height:50px; height: auto;
+    background-color: #eee;
+    padding:1em 0;
+    margin:0;
+}
+.partial header {border-bottom: 1px #ccc solid;}
+.partial footer {border-top: 1px #ccc solid;}
+.partial header p,
+.partial footer p {
+    font-size: 1em;
+}
+#profile .accordion-inner {
+    padding: 0;
+}
+#profile .accordion-body {
+    height: auto;
+}
+#profile #login-form {
+    /*height: 360px;*/
+}
+
+/* 
+## Shadow styles 
+*/
+/*
+```
+<div class="box-test"><div class="box-test shadow-top">Test - div.shadow-top</div></div>
+<div class="box-test"><div class="box-test shadow-right">Test - div.shadow-right</div></div>
+<div class="box-test"><div class="box-test shadow-down">Test - div.shadow-down</div></div>
+<div class="box-test"><div class="box-test shadow-left">Test - div.shadow-left</div></div>
+
+<div class="box-test"><div class="box-test shadow">Test - div.shadow</div></div>
+
+<div class="box-test"><div class="box-test shadow-search">Test - div.shadow-search</div></div>
+```
+*/
+.box-test {
+    position: relative;
+    /*padding:1em;*/
+    /*margin:0 0 1em;*/
+    text-align: center;
+    border-radius: 0.0em;
+    border: 0.125em lightblue solid;
+    background: white;
+    width:80%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.box-test .box-test {
+    position: relative;
+    border: 0.125em lightgreen solid;
+}
+
+/* 
+## New shadow styles... 
+*/
+/* 
+#### Please use the following shadow rules instead of the old ones: 
+*/
+/* ### Normal (outset) shadows */
+.shadow-up, .shadow-top {box-shadow: 0 -0.5em 0.5em -0.333em rgba(0,0,0,0.25);}
+.shadow-right {box-shadow: 0.5em 0 0.5em -0.333em rgba(0,0,0,0.25);}
+.shadow-down, .shadow-bottom {
+    -moz-box-shadow:0 0 8px 3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow:0 0 8px 3px rgba(0, 0, 0, 0.25);
+    box-shadow:0 0 8px 3px rgba(0, 0, 0, 0.25);
+}
+.shadow-left {box-shadow: -0.5em 0 0.5em -0.333em rgba(0,0,0,0.25);}
+
+/* ### Inset shadows */
+.shadow-in-up, .shadow-in-bottom {box-shadow: 0 -0.5em 0.5em -0.333em rgba(0,0,0,0.25) inset;}
+.shadow-in-left {box-shadow: 0.5em 0 0.5em -0.333em rgba(0,0,0,0.25) inset;}
+.shadow-in-down, .shadow-in-top {box-shadow: 0 0.5em 0.5em -0.333em rgba(0,0,0,0.25) inset;}
+.shadow-in-right {box-shadow: -0.5em 0 0.5em -0.333em rgba(0,0,0,0.25) inset;}
+
+/* 
+## Old shadow styles... 
+*/
+/* 
+### Please do not use the following shadow rules: 
+*/
+.shadow {
+    -moz-box-shadow: 0 4px 16px #666666;
+    -webkit-box-shadow: 0 4px 16px #666666;
+    box-shadow: 0 4px 16px #666666;
+}
+.shadow-search {
+    -moz-box-shadow: 0 4px 16px #ccc;
+    -webkit-box-shadow: 0 4px 16px #ccc;
+    box-shadow: 0 4px 16px #ccc;
+}
+
+.height100 { height: 100%; }
+.clearBoth { clear: both;}
+
+/* 
+## Animation & Effects styles 
+*/
+/* 
+### Offsets 
+*/
+/*
+```
+<div class="box-test"><div class="box-test offset-right">Test - div.offset-right</div></div>
+<div class="box-test"><div class="box-test offset-left">Test - div.offset-left</div></div>
+
+<div class="box-test"><div class="box-test onset-right">Test - div.onset-right</div></div>
+<div class="box-test"><div class="box-test onset-left">Test - div.onset-left</div></div>
+
+```
+*/
+
+.offset-right {margin-left:80% !important;}
+.offset-left {margin-left:-80% !important;}
+
+.onset-right {margin-left:20% !important;}
+.onset-left {margin-left:-20% !important;}
+
+/* 
+### Transitions 
+*/
+/* CSS3 transitions... 
+*/
+.wlcc-container,
+.profile-container,
+.deals-container,
+.home-view,
+.nav-main-menu, .nav-sub-menu,.nav-vert-menu, .nav-cat-menu, .nav-subcat-menu {
+    -webkit-transition: margin-left .25s ease;
+    -moz-transition:  margin-left .25s ease;
+    -ms-transition-property: margin-left;
+    -ms-transition-duration: .25s;
+    -ms-transition-timing-function: ease;
+    -o-transition: margin-left .25s ease;
+    transition: margin-left .25s ease 0s;
+}
+.nav-main-menu,.nav-sub-menu,.nav-vert-menu, .nav-cat-menu, .nav-subcat-menu
+{
+    -webkit-transition: height .25s ease;
+    -moz-transition: height .25s ease;
+    -ms-transition-property: height;
+    -ms-transition-duration: .25s;
+    -ms-transition-timing-function: ease;
+    -o-transition: height .25s ease;
+    transition: height .25s ease 0s;
+}
+.overlay {
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .5s;
+    -ms-transition-timing-function: ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease 0s;
+}
+
+/* 
+## Borders 
+*/
+.search-item-border
+{
+    border-style:solid;
+    border-width:1px;
+    border-spacing: 15pt;
+
+    border-radius:20px;
+    -moz-border-radius:20px;
+}
+
+/* 
+## Tabs 
+*/
+.tabbable { margin: 1em; }
+.nav-tabs { border: none;}
+.nav-tabs li{ padding: 0;}
+.nav-tabs li a{ color: #999; border-bottom: 1px solid #ccc;}
+.tabbable .active { color: #333; border-bottom: 0 !important;}
+.nav-tabs > li {
+    width: 49%;
+}
+
+/* 
+## Lists 
+*/
+#lists_nav_bar,
+#profile_nav_bar,
+#registry_nav_bar {
+    width: 100%;
+    height: 4em;
+    display: block; 
+    padding-top: 1em;
+    padding-left: .5em;
+}
+.lists {
+    width: 100%;
+    height: 3em;
+    display: block;
+    background-color: #eee;
+    margin-top: .5em;
+}
+#myLists, .list-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 101;
+}
+#myLists a {
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+    padding-top: .75em;
+}
+
+.lists div {
+    padding-left: 1em;
+    color: #666;
+}
+div.listName  {
+    padding-top: 1.5em;
+    padding-left: 0;
+}
+#listNameForm {
+    float: left;
+    margin: 0.5em 2.5%;
+    padding: 0;
+    width: 60%;
+}
+.lists.menu-item { height: 70px;}
+.list-items {
+    clear: both;
+    width: 100%;
+    margin: 0.5em 2.5%;
+    padding: 0;
+}
+.list-items li {
+    clear: both;
+    padding-top: 1em;
+    font-size: .8em;
+}
+a.list-button {
+    font-size: .75em; 
+    padding-left: 15px !important; 
+    padding-right: 15px !important; 
+    height: 2.75em !important;
+    margin-top: .75em !important;
+}  
+.regPrice {
+     text-align: right; 
+     float: left;
+     color: #999;
+     text-decoration: line-through;
+}
+/* 
+## jQuery Cycle styles 
+*/
+.pics {
+    height: 160px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+.nav {
+    text-align: center;
+    margin-top: 1em;
+    width: 100%;
+}
+nav a {text-decoration: none !important;  }
+#nav a, #s1 strong {
+    background: url("../images/bullet-inactive.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 20px;
+}
+#nav a.activeSlide {
+    background: url("../images/bullet-active.png") no-repeat scroll 0 0 transparent;
+    background-size: .5em;
+}
+#nav a:focus {
+    outline: medium none;
+}
+#nav a { background-size: .5em .5em; }
+
+
+.preferredStore.menu-item {
+    margin-top: .5em;
+    border-top: 1px solid #ccc;
+}
+.profile-label {
+     width:25%;
+     color: #999;
+}
+.account-info-label {
+    float: left;width:43%; 
+    text-align: left;
+    color: #999;
+}
+.account-info-data {
+     float: right;
+     width:53%;
+     text-align: right;
+}
+.saved-addresses.menu-item { line-height: 2em;}
+.order_center .tabbable { margin: 0;}
+
+img {
+  background: url('../images/loader-grey.gif') no-repeat;
+  background-size:20% 20%;
+  background-position:inherit;
+}
+
+.orderItemDetails {
+    border-bottom: 1px solid #ccc;
+    height: 100%;
+    width: 100%;
+    display: block;
+    min-height: 8em;
+    margin-bottom: .5em;
+}
+.order_center button.active {
+    background: -webkit-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -o-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -ms-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -moz-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: linear-gradient(to bottom, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    color: white;
+    text-shadow: none;
+}

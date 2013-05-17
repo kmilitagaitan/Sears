@@ -1,0 +1,37 @@
+{
+    "globalNavigation": {
+        "verticals": [{
+                "vertical": {
+                    "displayName": "Automotive & Tires",
+                    "urlName": "Automotive",
+                    "categories": [{
+                            "category": {
+                                "displayName": "Services",
+                                "urlName": "Services",
+                                "imgURL": ""
+                            }
+                        },{
+                            "category": {
+                                "displayName": "Tires",
+                                "urlName": "Tires",
+                                "imgURL": ""
+                            }
+                        }, {
+                            "category": {
+                                "displayName": "Batteries",
+                                "urlName": "Batteries",
+                                "imgURL": ""
+                            }
+                        }, {
+                            "category": {
+                                "displayName": "Scheduler",
+                                "urlName": "Scheduler",
+                                "imgURL": ""
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,67 @@
+#newfooter {
+background: #eee;
+width: 100%;
+/*margin-top: 10px;*/
+}
+.ui-footer-fixed {
+bottom: 0px;
+/*height: 72px;*/
+text-align: center;
+line-height: 100%;
+/*margin-top: 75px;*/
+}
+.ui-header-fixed, .ui-footer-fixed {
+left: 0;
+right: 0;
+width: 100%;
+position: fixed;
+z-index: 1000;
+}
+.ui-header, .ui-footer {
+border-left-width: 0;
+border-right-width: 0;
+}
+.ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button {}
+.ui-bar-a {
+border: 1px solid #333;
+background: #eee;
+/*text-shadow: 0 -1px 1px #000;*/
+
+}
+.ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button {}
+.ui-body-c, .ui-overlay-c {
+color: #333;
+/*text-shadow: 0 1px 0 #fff;*/
+}
+.ui-body-c, .ui-overlay-c {
+color: #333;
+/*text-shadow: 0 1px 0 #fff;*/
+}
+.qtp-intput{
+	height:40px;
+	width:20%;
+}
+#addToCartMsg{
+	display: none;
+	position: absolute;
+	right:10px;
+	bottom:72px;
+	left:10px;
+	/*width: 100%;*/
+	padding:15px;
+	margin: 0;
+	background-color: white;
+}
+#addtocart-input-and-button-container{
+	position:relative;
+	/*height: 30%;*/
+	width: 90%;
+	margin:10px auto;
+	text-align: center;
+	/*line-height: 100%;*/
+	/*top: 20%;*/
+}
+button.add_to_cart{
+	/*background-color: #FF7341;
+	-webkit-linear-gradient(top,#ff7341 0,#FE9E43 99%);*/
+}

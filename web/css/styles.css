@@ -1,0 +1,58 @@
+/*
+# SwordFish Styles
+
+## About
+
+This style guide was produced with the [Kalei](http://kaleistyleguide.com/) style guide system.
+
+The navigation bar on the left lists the main CSS files used in this project.
+
+*/
+
+/* 
+## Angular UI Bootstrap
+
+Nothing to see here since this file is minimized.
+
+ */
+@import url("lib/angular/bootstrap.min.css");
+
+
+/* 
+## Icon Font
+ */
+@import url("lib/font-swordfish.css");
+
+/* 
+## SwordFish App Styles
+ */
+
+@import url("basic.css");
+
+@import url("forms.css");
+
+@import url("layout.css");
+
+@import url("search.css");
+
+@import url("header.css");
+
+@import url("menu.css");
+
+@import url("carousel.css");
+
+@import url("product.css");
+
+@import url("deals.css");
+
+@import url("footer.css");
+
+/* 
+## SwordFish Theme Styles
+ */
+@import url("theme.css");
+
+/* 
+## WLCC Styles
+ */
+@import url("shopping-cart.css");

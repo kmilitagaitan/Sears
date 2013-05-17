@@ -1,0 +1,37 @@
+{
+    "globalNavigation": {
+        "verticals": [{
+                "displayName": "Appliances",
+                "verticalName": "Appliances"
+            },
+             {
+                "displayName": "Automotive & tires",
+                "verticalName": "Automotive"
+            }, {
+                "displayName": "Lawn & Garden",
+                "verticalName": "Lawn & Garden"
+            }, {
+                "displayName": "Outdoor Living",
+                "verticalName": "Outdoor Living"
+            }, {
+                "displayName": "TVs & Electronics",
+                "verticalName": "TVs & Electronics"
+            }, {
+                "displayName": "Jewelry & Watches",
+                "verticalName": "Jewelry"
+            }, {
+                "displayName": "Tools",
+                "verticalName": "Tools"
+            }, {
+                "displayName": "Furniture & Mattresses",
+                "verticalName": "Furniture & Mattresses"
+            }, {
+                "displayName": "Fitness & Sports",
+                "verticalName": "Fitness & Sports"
+            }, {
+                "displayName": "Computers",
+                "verticalName": "Computers"
+            }
+        ]
+    }
+}

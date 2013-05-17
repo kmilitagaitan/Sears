@@ -1,0 +1,457 @@
+{
+    "_id": {
+        "$oid": "512bcf09e4b02076ba7e849e"
+    },
+    "application": {
+        "id": "sears"
+    },
+    "environment": {
+        "id": "DEV",
+        "description": "Swordfish Development Environment"
+    },
+    "wlccUrl": {
+        "url": "QA",
+        "url_map": [
+            {
+                "DEV": "http://mobile303p.dev.ch3.s.com:8180/wlcc_dispatcher_test_dev/home.html"
+            },
+            {
+                "QA": "http://mobile303p.qa.ch3.s.com:8180/wlcc_dispatcher_test_qa/home.html"
+            }
+        ]
+    },
+    "apiHosts": {
+        "host_map": [
+            {
+                "LOCAL": ""
+            },
+            {
+                "MOCK": "https://cloudfish.herokuapp.com"
+            },
+            {
+                "DEV": "https://mcpapp306p.dev.ch3.s.com\\:8543"
+            },
+            {
+                "QA": "https://mobile1vip.qa.ch3.s.com"
+            },
+            {
+                "TEST": "http://cqapp301p.dev.ch3.s.com\\:4502"
+            },
+            {
+                "SWORDFISHDEV":"http://skin.searshc.com/mapweb/qa/sal"
+            },
+            {
+                "TEC": "http://semantictec.com"
+            }
+        ]
+    },
+    "apiPaths": [
+        {
+            "name": "ADDITIONAL_PROMOS",
+            "host": "LOCAL",
+            "path_map": [
+                {
+                    "LOCAL": "data/additional-promos.json"
+                },
+                {
+                    "MOCK": "/cms/additionalPromos"
+                },
+                {
+                    "QA": "/mobileapi5/v1/additionalPromos"
+                }
+            ]
+        },
+        {
+            "name": "BANNER",
+            "host": "MOCK",
+            "path_map": [
+                {
+                    "LOCAL": "data/cms-feed.json"
+                },
+                {
+                    "MOCK": "/banner"
+                },
+                {
+                    "QA": "/mobileapi5/v1/cmsFeed"
+                },
+                {
+                    "TEST": "/etc/shc/content/data.sears.wizard.1234567.d.e.1.0.1.allJson"
+                }
+            ]
+        },
+        {
+            "name": "BROWSE_CATEGORY",
+            "host": "LOCAL",
+            "path_map": [
+                {
+                    "LOCAL": "data/browse-category.json"
+                },
+                {
+                    "MOCK": "/browseCategory"
+                },
+                {
+                    "DEV": "/mobileapi/v1/products/browse/category"
+                },
+                {
+                    "QA": "/mobileapi5/v1/products/browse/category"
+                }
+            ]
+        },
+        {
+            "name": "BROWSE_SUBCATEGORY",
+            "host": "LOCAL",
+            "path_map": [
+                {
+                    "LOCAL": "data/browse-subcategory.json"
+                },
+                {
+                    "MOCK": "/browseSubcategory"
+                },
+                {
+                    "DEV": "/mobileapi/v1/products/browse/subcategory"
+                },
+                {
+                    "QA": "/mobileapi5/v1/products/browse/subcategory"
+                }
+            ]
+        },
+        {
+            "name": "BROWSE_VERTICAL",
+            "host": "LOCAL",
+            "path_map": [
+                {
+                    "LOCAL": "data/browse-vertical.json"
+                },
+                {
+                    "MOCK": "/browseVertical"
+                },
+                {
+                    "DEV": "/mobileapi/v1/products/browse/vertical"
+                },
+                {
+                    "QA": "/mobileapi5/v1/products/browse/vertical"
+                }
+            ]
+        },
+        {
+            "name": "DEALS_OF_THE_DAY",
+            "host": "SWORDFISHDEV",
+            "path_map": [
+                {
+                    "LOCAL": "data/deals-of-the-day.json"
+                },
+                {
+                    "MOCK": "/dod"
+                },
+                {
+                    "DEV": "/mobileapi/v1/dod"
+                },
+                {
+                    "QA": "/mobileapi5/v1/dod"
+                },
+                {
+                    "SWORDFISHDEV": "/dod"
+                }
+            ]
+        },
+        {
+            "name": "FINDER",
+            "host": "DEv",
+            "path_map": [
+                {
+                    "DEV": "/mobileapi/v1/finders"
+                },
+                {
+                    "QA": "/mobileapi5/v1/finders"
+                }
+            ]
+        },
+        {
+            "name": "LOCAL_ADS",
+            "host": "MOCK",
+            "path_map": [
+                {
+                    "LOCAL": "data/local-ads.json"
+                },
+                {
+                    "MOCK": "/localads"
+                },
+                {
+                    "QA": "/mobileapi5/v1/localads"
+                }
+            ]
+        },
+        {
+            "name": "NOTIFICATIONS",
+            "host": "MOCK",
+            "path_map": [
+                {
+                    "LOCAL": "data/notifications.json"
+                },
+                {
+                    "MOCK": "/notify"
+                },
+                {
+                    "QA": "/mobileapi5/v1/notify"
+                }
+            ]
+        },
+        {
+            "name": "PRODUCT_COMPETITOR_COMPARE",
+            "host": "DEV",
+            "path_map": [
+                {
+                    "DEV": "/mobileapi/v1/products/:partNumber/competitorcompare"
+                },
+                {
+                    "QA": "/mobileapi5/v1/products/:partNumber/competitorcompare"
+                }
+            ]
+        },
+        {
+            "name": "PRODUCT_DETAILS",
+            "host": "SWORDFISHDEV",
+            "path_map": [
+                {
+                    "LOCAL": "data/product-details.json"
+                },
+                {
+                    "MOCK": "/product/details"
+                },
+                {
+                    "DEV": "/mobileapi/v1/products/details"
+                },
+                {
+                    "QA": "/mobileapi5/v1/products/details"
+                },
+                {
+                    "SWORDFISHDEV": "/products/details"
+                }
+
+
+            ]
+        },
+        {
+            "name": "PRODUCT_RECOMMENDATIONS",
+            "host": "MOCK",
+            "path_map": [
+                {
+                    "LOCAL": "data/pdp_recommendations.json"
+                },
+                {
+                    "MOCK": "/product/recommendations"
+                },
+                {
+                    "DEV": "/mobileapi/v1/products/details"
+                },
+                {
+                    "QA": "/mobileapi5/v1/products/details"
+                }
+            ]
+        },
+        {
+            "name": "PRODUCT_REVIEWS",
+            "host": "SWORDFISHDEV",
+            "path_map": [
+                {
+                    "LOCAL": "data/product-reviews.json"
+                },
+                {
+                    "MOCK": "/productReviews"
+                },
+                {
+                    "DEV": "/mobileapi/v1/products/reviews"
+                },
+                {
+                    "QA": "/mobileapi5/v1/products/reviews?partNum="
+                },
+                {
+                    "SWORDFISHDEV": "/products/reviews"
+                }
+            ]
+        },
+        {
+            "name": "PRODUCT_SEARCH",
+            "host": "MOCK",
+            "path_map": [
+                {
+                    "LOCAL": "data/product-search.json"
+                },
+                {
+                    "MOCK": "/productsearch"
+                },
+                {
+                    "DEV": "/mobileapi/v1/products/search"
+                },
+                {
+                    "QA": "/mobileapi5/v1/products/search"
+                }
+            ]
+        },
+        {
+            "name": "PRODUCT_SEARCH_PART_NUM",
+            "host": "LOCAL",
+            "path_map": [
+                {
+                    "LOCAL": "data/product-search-v1-part-num.json"
+                },
+                {
+                    "MOCK": "/productsearch"
+                },
+                {
+                    "DEV": "/mobileapi/v1/products/part-num"
+                },
+                {
+                    "QA": "/mobileapi5/v1/products/part-num"
+                }
+            ]
+        },
+        {
+            "name": "PRODUCT_SEARCH_UPC",
+            "host": "LOCAL",
+            "path_map": [
+                {
+                    "LOCAL": "data/product-search-v1-upc.json"
+                },
+                {
+                    "MOCK": "/productsearch"
+                },
+                {
+                    "DEV": "/mobileapi/v1/products/upc"
+                },
+                {
+                    "QA": "/mobileapi5/v1/products/upc"
+                }
+            ]
+        },
+        {
+            "name": "PRODUCT_UPSELL",
+            "host": "DEV",
+            "path_map": [
+                {
+                    "DEV": "/mobileapi/v1/products/:partNumber/upsell"
+                },
+                {
+                    "QA": "/mobileapi5/v1/products/:partNumber/upsell"
+                }
+            ]
+        },
+        {
+            "name": "PROFILE_LOGIN",
+            "host": "QA",
+            "path_map": [
+                {
+                    "DEV": "/mobileapi/v1/security/authenticate"
+                },
+                {
+                    "QA": "/mobileapi5/v1/security/authenticate"
+                }
+            ]
+        },
+        {
+            "name": "PROFILE_REGISTER",
+            "host": "QA",
+            "path_map": [
+                {
+                    "DEV": "/mobileapi/v1/profileintegration/register"
+                },
+                {
+                    "QA": "/mobileapi5/v1/profileintegration/register"
+                }
+            ]
+        },
+        {
+            "name": "PROFILE_RESET",
+            "host": "QA",
+            "path_map": [
+                {
+                    "DEV": "/mobileapi/v1/profileintegration/reset"
+                },
+                {
+                    "QA": "/mobileapi5/v1/profileintegration/reset"
+                }
+            ]
+        },
+        {
+            "name": "RECOMMENDED_PRODUCTS",
+            "host": "MOCK",
+            "path_map": [
+                {
+                    "LOCAL": "data/recommended-products.json"
+                },
+                {
+                    "MOCK": "/recommendations"
+                },
+                {
+                    "QA": "/mobileapi5/v1/recommendedProducts"
+                }
+            ]
+        },
+        {
+            "name": "UNIVERSAL_LIST",
+            "host": "DEv",
+            "path_map": [
+                {
+                    "DEV": "/mobileapi/v1/universallist/lists"
+                },
+                {
+                    "QA": "/mobileapi5/v1/universallist/lists"
+                }
+            ]
+        },
+    {
+      "name": "PROFILE_REGISTER",
+      "host": "QA",
+      "path_map": [
+        {
+          "DEV": "/mobileapi/v1/profileintegration/register"
+        },
+        {
+          "QA": "/mobileapi5/v1/profileintegration/register"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE_RESET",
+      "host": "QA",
+      "path_map": [
+        {
+          "DEV": "/mobileapi/v1/profileintegration/reset"
+        },
+        {
+          "QA": "/mobileapi5/v1/profileintegration/reset"
+        }
+      ]
+    },
+    {
+      "name": "RECOMMENDED_PRODUCTS",
+      "host": "TEC",
+      "path_map": [
+        {
+          "LOCAL": "data/recommended-products.json"
+        },
+        {
+          "MOCK": "/recommendations"
+        },
+        {
+          "QA": "/mobileapi5/v1/recommendedProducts"
+        },
+        {
+          "TEC": "/tec/api/searsmobileasset/campaign/mhome/asset/mobileprodrecs?"
+        }
+      ]
+    },
+    {
+      "name": "UNIVERSAL_LIST",
+      "host": "DEV",
+      "path_map": [
+        {
+          "DEV": "/mobileapi/v1/universallist/lists"
+        },
+        {
+          "QA": "/mobileapi5/v1/universallist/lists"
+        }
+      ]
+    }
+  ]
+}

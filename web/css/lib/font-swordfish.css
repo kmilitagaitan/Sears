@@ -1,0 +1,230 @@
+/* # SwordFish Icon Font */
+/* 
+
+WARNING: Your are using ligatures for your icon font.
+
+Ligatures are not supported in IE 9 (and older).
+
+Use the Private Use Area encoding for best browser support.
+*/
+
+/* ## Samples */
+
+/*
+#### FASTER:  List all individual classes:
+
+<pre>
+.sf-icon-star, .sf-icon-star-2, .sf-icon-star-3, .sf-icon-qrcode, .sf-icon-checkmark, .sf-icon-check-alt, .sf-icon-x, .sf-icon-x-altx-alt, .sf-icon-cog, .sf-icon-arrow-d-small, .sf-icon-arrow-d, .sf-icon-arrow-l-small, .sf-icon-gifts, .sf-icon-zoom, .sf-icon-tags, .sf-icon-scan, .sf-icon-pin, .sf-icon-person, .sf-icon-balloon, .sf-icon-barcode-fill, .sf-icon-barcode, .sf-icon-cart, .sf-icon-bag, .sf-icon-person-fill, .sf-icon-megaphone, .sf-icon-menu, .sf-icon-arrow-u, .sf-icon-arrow-u-small, .sf-icon-lists, .sf-icon-arrow-r, .sf-icon-house, .sf-icon-arrow-r-small, .sf-icon-arrow-l, .sf-icon-help {
+	...style rules...
+}
+</pre>
+
+#### SLOWER: Generic icon class:
+
+<pre>
+.sf-icon {
+	...style rules...
+}
+</pre>
+
+#### We use the faster method...
+```
+<span class="sf-icon-star"></span>
+<span class="sf-icon-star-2"></span>
+<span class="sf-icon-star-3"></span>
+<span class="sf-icon-qrcode"></span>
+<span class="sf-icon-checkmark"></span>
+<span class="sf-icon-check-alt"></span>
+<span class="sf-icon-x"></span>
+<span class="sf-icon-x-altx-alt"></span>
+<span class="sf-icon-cog"></span>
+<span class="sf-icon-arrow-d-small"></span>
+<span class="sf-icon-arrow-d"></span>
+<span class="sf-icon-arrow-l-small"></span>
+<span class="sf-icon-gifts"></span>
+<span class="sf-icon-zoom"></span>
+<span class="sf-icon-tags"></span>
+<span class="sf-icon-scan"></span>
+<span class="sf-icon-pin"></span>
+<span class="sf-icon-person"></span>
+<span class="sf-icon-balloon"></span>
+<span class="sf-icon-barcode-fill"></span>
+<span class="sf-icon-barcode"></span>
+<span class="sf-icon-cart"></span>
+<span class="sf-icon-bag"></span>
+<span class="sf-icon-person-fill"></span>
+<span class="sf-icon-megaphone"></span>
+<span class="sf-icon-menu"></span>
+<span class="sf-icon-arrow-u"></span>
+<span class="sf-icon-arrow-u-small"></span>
+<span class="sf-icon-lists"></span>
+<span class="sf-icon-arrow-r"></span>
+<span class="sf-icon-house"></span>
+<span class="sf-icon-arrow-r-small"></span>
+<span class="sf-icon-arrow-l"></span>
+<span class="sf-icon-help"></span>
+```
+
+*/
+@font-face {
+	font-family: 'swordfish';
+	src:url('fonts/swordfish.eot');
+	src:url('fonts/swordfish.eot?#iefix') format('embedded-opentype'),
+		url('fonts/swordfish.woff') format('woff'),
+		url('fonts/swordfish.ttf') format('truetype'),
+		url('fonts/swordfish.svg#swordfish') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* ## Usage */
+/* ### NOT PREFERRED:  Data attribute usage */
+/* 
+Use the following CSS code if you want to use data attributes for inserting your icons 
+```
+<p>test icon A element: <a href='#' data-icon='&#x37;'></a></p>
+<p>test icon SPAN element: <span data-icon='&#x37;'></span></p>
+```
+*/
+
+[data-icon]:before {
+	font-family: 'swordfish';
+	content: attr(data-icon);
+		speak: none;
+	/* Enable Ligatures */
+	-webkit-font-feature-settings:"liga","dlig";-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-o-font-feature-settings:"liga","dlig";
+	font-feature-settings:"liga","dlig";
+	text-rendering:optimizeLegibility;
+		font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* ### PREFERRED:  Class attribute usage */
+/* 
+Use the following CSS code if you want to have a class per icon 
+```
+<p>test icon a: <a href='#' class='sf-icon-house'></a></p>
+<p>test icon span: <span class='sf-icon-house'></span></p>
+```
+*/
+
+.sf-icon,
+.sf-icon-star, .sf-icon-star-2, .sf-icon-star-3, .sf-icon-qrcode, .sf-icon-checkmark, .sf-icon-check-alt, .sf-icon-x, .sf-icon-x-altx-alt, .sf-icon-cog, .sf-icon-arrow-d-small, .sf-icon-arrow-d, .sf-icon-arrow-l-small, .sf-icon-gifts, .sf-icon-zoom, .sf-icon-tags, .sf-icon-scan, .sf-icon-pin, .sf-icon-person, .sf-icon-balloon, .sf-icon-barcode-fill, .sf-icon-barcode, .sf-icon-cart, .sf-icon-bag, .sf-icon-person-fill, .sf-icon-megaphone, .sf-icon-menu, .sf-icon-arrow-u, .sf-icon-arrow-u-small, .sf-icon-lists, .sf-icon-arrow-r, .sf-icon-house, .sf-icon-arrow-r-small, .sf-icon-arrow-l, .sf-icon-help {
+	font-family: 'swordfish';
+		speak: none;
+	/* Enable Ligatures */
+	-webkit-font-feature-settings:"liga","dlig";-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-o-font-feature-settings:"liga","dlig";
+	font-feature-settings:"liga","dlig";
+	text-rendering:optimizeLegibility;
+		font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.sf-icon-star:before {
+	content: "\30\2e\30";
+}
+.sf-icon-star-2:before {
+	content: "\30\2e\35";
+}
+.sf-icon-star-3:before {
+	content: "\31\2e\30";
+}
+.sf-icon-qrcode:before {
+	content: "\71\72";
+}
+.sf-icon-checkmark:before {
+	content: "\2f";
+}
+.sf-icon-check-alt:before {
+	content: "\2f\2f";
+}
+.sf-icon-x:before {
+	content: "\78";
+}
+.sf-icon-x-altx-alt:before {
+	content: "\78\78";
+}
+.sf-icon-cog:before {
+	content: "\67\32";
+}
+.sf-icon-arrow-d-small:before {
+	content: "\21";
+}
+.sf-icon-arrow-d:before {
+	content: "\22";
+}
+.sf-icon-arrow-l-small:before {
+	content: "\23";
+}
+.sf-icon-gifts:before {
+	content: "\24";
+}
+.sf-icon-zoom:before {
+	content: "\25";
+}
+.sf-icon-tags:before {
+	content: "\26";
+}
+.sf-icon-scan:before {
+	content: "\27";
+}
+.sf-icon-pin:before {
+	content: "\28";
+}
+.sf-icon-person:before {
+	content: "\29";
+}
+.sf-icon-balloon:before {
+	content: "\2a";
+}
+.sf-icon-barcode-fill:before {
+	content: "\2b";
+}
+.sf-icon-barcode:before {
+	content: "\2c";
+}
+.sf-icon-cart:before {
+	content: "\2d";
+}
+.sf-icon-bag:before {
+	content: "\2e";
+}
+.sf-icon-person-fill:before {
+	content: "\30";
+}
+.sf-icon-megaphone:before {
+	content: "\31";
+}
+.sf-icon-menu:before {
+	content: "\32";
+}
+.sf-icon-arrow-u:before {
+	content: "\33";
+}
+.sf-icon-arrow-u-small:before {
+	content: "\34";
+}
+.sf-icon-lists:before {
+	content: "\35";
+}
+.sf-icon-arrow-r:before {
+	content: "\36";
+}
+.sf-icon-house:before {
+	content: "\37";
+}
+.sf-icon-arrow-r-small:before {
+	content: "\38";
+}
+.sf-icon-arrow-l:before {
+	content: "\39";
+}
+.sf-icon-help:before {
+	content: "\3a";
+}

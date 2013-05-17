@@ -1,0 +1,125 @@
+.local-header-space {
+    font-family: "Open Sans",sans-serif!important;
+    font-weight:300;
+    float: left;
+    height: 50% !important;
+    width : 100%;
+    color: #333;
+}
+
+#local-headingContainer {
+    width:200%;
+    min-height: 10%;
+    background: url("../images/bg/kindajean/kindajean.png") repeat scroll 0 0 #808080;
+}
+
+.local-store-back-button{
+    width: 70px !important;
+    height: 35px !important;
+    font-weight:normal;
+    color: #666666 ;
+    text-decoration: none !important;
+    font-size:12px;
+    border: 0  !important;
+    box-shadow: none !important;
+    background: transparent !important; /* make the button transparent */
+    background-repeat: no-repeat;
+    text-align: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 3px;   /*------------------------ Change and delete-----------------------*/
+    line-height: 0px!important;
+}
+
+.local-store-list-title{
+    font-weight:lighter;
+    color: #313131 ;
+    text-decoration: none !important;
+    margin-bottom: 0em!important;
+    width: 70%;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.local-sears{
+    color:#15447e;
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:22px;
+}
+
+.local-local{
+    color:#666666;
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:22px;
+}
+
+.local-ad{
+    color:#15447e;
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:22px;
+}
+
+.local-results{
+    font-family:sans-serif;
+    font-size:15px;
+    color:#93a1a1;
+}
+
+.local-right-arrow{
+    float: right;
+    margin-right:1%;
+    margin-top:25px ;
+    width: 20px !important;
+    height: 20px !important;
+
+}
+
+.local-locator-icon{
+    float: left;
+    margin-top:10px;
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.local-storename{
+    font-size: 17px;
+    color:#333;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.local-streetaddress{
+    margin-left: 4px;
+    margin-top:12px ;
+    font-size: 14px;
+    color: #333;
+    font-weight:400;
+    font-family: sans-serif;
+}
+
+.local-city{
+    margin-left: 4px;
+     font-size: 13px;
+    color: #333;
+    font-weight:400;
+}
+
+.local-distance{
+    margin-left: 4px;
+    font-size: 13px;
+    color:#93a1a1;
+    font-weight: 400;
+}
+
+.local-location{
+    font-style: normal;
+    color:#0086b3;
+    font-weight:bolder;
+    font-size: 15px;
+}
+
+
+

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 
+    This is included for smart app banners, there 
+    may be a better way but the tag needs to be present 
+    early in the parsing of the document by Sarfari on 
+    iOS in order to work... 
+-->
+<script type="text/javascript" src="js/lib/jquery-1.9.1.min.js"></script>
+<!-- Custom utility functions -->
+<script type="text/javascript" src="js/app-utils.js"></script>
+
+<!--<script type="text/javascript">
+var mymeta = setOrCreateMetaTag('name', 'apple-itunes-app', 'app-id=');
+</script>-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>SwordFish Project</title>
+
+<!-- CSS Base Web Font (Open Sans) -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700">
+
+<!-- CSS Custom Icon Font -->
+<link rel="stylesheet" type="text/css" href="css/lib/font-swordfish.css" />
+<!--[if lte IE 7]><script src="css/lib/font-swordfish-lte-ie7.js"></script><![endif]-->
+
+<!-- CSS Libraries -->
+<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+<link rel="stylesheet" type="text/css" href="css/lib/angular/bootstrap.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/lib/angular/calendar.css"> -->
+<!--<link rel="stylesheet" type="text/css" href="css/lib/angular/calendar.min.css">-->
+
+<!-- CSS Custom App Styles -->
+<link rel="stylesheet" type="text/css" href="css/basic.css">
+<link rel="stylesheet" type="text/css" href="css/forms.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<link rel="stylesheet" type="text/css" href="css/search.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/filter.css">
+<link rel="stylesheet" type="text/css" href="css/carousel.css">
+<link rel="stylesheet" type="text/css" href="css/carousel-hero3.css">
+<link rel="stylesheet" type="text/css" href="css/product.css">
+<link rel="stylesheet" type="text/css" href="css/deals.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/giftcard.css">
+<link rel="stylesheet" type="text/css" href="css/shopping-cart.css">
+<link rel="stylesheet" type="text/css" href="css/swipeCSS.css" />
+<link rel="stylesheet" type="text/css" href="css/sywr.css" />
+<link rel="stylesheet" type="text/css" href="css/automotive/automotive.css" />
+
+<script type="text/javascript">
+var cartConfig = {
+    cartPartial : "views/cart.html",
+    fiveEight: false
+}
+window.session = window.session || {}
+window.setSession = function(obj){
+   var session = window.session;
+   if (typeof obj == "object"){
+       for (var attr in obj) { 
+        session[attr] = obj[attr];
+        } 
+   }
+   console.log(window.session); 
+}
+window.setSession({
+       sessionKey: 'null',
+       userType: 'G',
+       zipcode: 'noZip',
+       isExpress: null,
+       ottimer: null,
+       vid: 'null'
+}); 
+window.getSession = function(){
+   return window.session;
+}
+</script>
+
+</head>
+<body>
+<!-- class gets populated by jquery with mobile or tablet -->
+
+<!-- START SwordFish App area -->
+<div id="swordfish" ng-controller="PerformanceCtrl">
+
+    <!-- START Menu area -->
+    <div id="swordfish-menu" ng-include src="'views/menu.html'"></div>
+    
+    <!-- START Header area -->
+    <div id="swordfish-header" ng-hide="isHybridApp" ng-switch on="deviceType" ng-controller="HeaderCtrl"> 
+        <!-- START header for mobile device. -->
+        <div ng-switch-when="mobile">
+            <div ng-include src="'views/header-mobile.html'"></div>
+        </div>
+        <!-- START header for tablet device. -->
+        <div ng-switch-when="tablet">
+            <div ng-include src="'views/header-tablet.html'"></div>
+        </div>
+    </div>
+
+    <!-- START Main Content area -->
+    <div id="swordfish-content" class="home-view shadow-down shadow">
+        <div id="overlayid" class="overlay"></div>
+        <div id="swordfish-search" ng-include src="'views/search-bar.html'"></div>
+        <!-- <div id="swordfish-search" ng-include src="'views/search-history.html'"></div> -->
+        <!-- <div id="swordfish-search" ng-include src="'views/search-history2.html'"></div> -->
+        <div id="swordfish-view" style="clear:both" ng-view></div>
+    </div>
+
+</div>
+
+<!--<div id="wlcc" class="wlcc-container content-tray">
+    <div ng-include src="'views/cart.html'"></div>
+</div>-->
+
+<div id="profile" class="profile-container content-tray" ng-controller="ProfileCtrl">
+    <div ng-include src="'views/profile/tray/index.html'"></div>
+</div>
+
+<!--<div id="deals" class="deals-container content-tray" ng-controller="DealsCtrl">
+    <div ng-include src="'views/deals/tray-index.html'"></div>
+</div>-->
+
+<!-- START All Scripts -->
+<!-- 
+    This is included above for smart banners there may be a better way...
+    <script src="js/lib/jquery-1.9.1.min.js"></script>   
+-->
+<script src="js/bootstrap-2.3.1.js"></script>
+<!--<script src="js/bootstrap.js"></script>-->
+<script src="js/lib/jquery.cycle.all.js"></script>
+<script src="js/lib/jquery.touchwipe.js"></script>
+<script src="js/lib/jquery.stickysectionheaders.js"></script>
+<script src="js/lib/iscroll.js"></script>
+
+<!-- Angular Library -->
+<script src="js/lib/angular/angular.min.js"></script>
+
+<!-- Ng Infinite Scroll Library -->
+<!--<script src="js/lib/angular/ng-infinite-scroll.js"></script>-->
+
+<!-- This is the route provider for the main app... -->
+<script src="js/app.js"></script>
+
+<!-- App config -->
+<script src="config/app-config.js"></script>
+
+<!-- Custom utility functions -->
+<script src="js/app-utils.js"></script>
+<script src="js/utils/utils.js"></script>
+
+<!-- WLCC Integration -->
+<script src="js/shopping-cart.js" type="text/javascript"></script>
+<script src="js/sdkFunctions.js" type="text/javascript"></script>
+
+<!-- AngularJS Controllers -->
+<script src="js/controllers/c-home.js"></script>
+<script src="js/controllers/c-browse.js"></script>
+<!--<script src="js/controllers/c-account.js"></script>-->
+<!--Filter controller-->
+<script src="js/controllers/c-filter.js"></script>
+<!-- <script src="js/controllers/c-account-info.js"></script> -->
+<script src="js/controllers/c-profile.js"></script>
+
+<script src="js/controllers/c-product-details.js"></script>
+<script src="js/controllers/c-deals.js"></script>
+<script src="js/controllers/c-feed.js"></script>
+<script src="js/controllers/c-lists.js"></script>
+<script src="js/controllers/c-registry.js"></script>
+<script src="js/controllers/c-more-deals.js"></script>
+<script src="js/controllers/c-gift-card.js"></script>
+<script src="js/controllers/c-share.js"></script>
+<script src="js/controllers/c-changeView.js"></script>
+
+<script src="js/controllers/c-localAd.js"></script>
+<script src="js/controllers/c-sywr.js"></script>
+
+<script src="js/controllers/automotive/c-automotive.js"></script>
+
+<!-- controller helpers -->
+<script src="js/controllers/h-product-categories.js"></script>
+<script src="js/controllers/h-product-brands.js"></script>
+<script src="js/controllers/h-prices.js"></script>
+<script src="js/controllers/h-product-filters.js"></script>
+
+<!-- AngularJS Directives -->
+<!--<script src="js/directives/directives.js"></script>-->
+<script src="js/directives/d-product-details.js"></script>
+<script src="js/directives/d-link-action.js"></script>
+<script src="js/directives/d-slider.js"></script>
+<script src="js/directives/d-siteworx-head-js.js"></script>
+<script src="js/directives/d-siteworx-body-js.js"></script>
+<script src="js/directives/d-deals-promo_pages.js"></script>
+<script src="js/directives/d-home.js"></script>
+<script src="js/directives/d-go-back.js"></script>
+
+<!-- AngularJS Filters -->
+<script src="js/filters/f-deals-promo-pages.js"></script>
+
+<!-- AngularJS Services -->
+<script src="js/services/s-home.js"></script>
+<script src="js/services/s-browse.js"></script>
+<script src="js/services/s-product-details.js"></script>
+<script src="js/services/s-utils.js"></script>
+<script src="js/services/s-profile.js"></script>
+<script src="js/services/bannerService.js"></script>
+<script src="js/services/s-gift-card.js"></script>
+<script src="js/services/s-order-center.js"></script>
+
+<!-- Misc Libraries -->
+<script src="js/lib/angular/angular-resource.min.js"></script>
+<script src="js/lib/ui-bootstrap-tpls-0.1.0.js"></script>
+<script src="js/lib/hammer.js"></script>
+<script src="js/lib/jquery.hammer.js"></script>
+<script src="js/lib/swipeview.js"></script>
+<script type="text/javascript" src="js/lib/calendar.js"></script>
+<script src="js/lib/ng-infinite-scroll.min.js"></script>
+<script src="js/lib/jquery.xml2json.js"></script>
+
+<!--image zoom script-->
+<script src="js/lib/jquery.smoothZoom.min.js"></script>
+
+<!--google map service-->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="js/lib/angular/angular-ui.js"></script>
+<script src="js/lib/angular/angular-ui-event.js"></script>
+<script src="js/lib/angular/angular-ui-map.js"></script>
+
+<!--
+<script type="text/javascript" src="js/lib/angular-slider/jqueryUITouchPunch.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+-->
+
+<!--<script type="text/javascript" src="js/lib/noUiSlider/jquery.nouislider.min.js"></script>-->
+<script type="text/javascript" src="js/lib/log4javascript_uncompressed.js"></script>
+
+<!-- Captcha Script-->
+<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+<script type="text/javascript">
+
+    var deviceType = "tablet";
+    var hostname = location.hostname;   
+
+    // jQuery Cycle carousel init.
+    startedCycle1 = false;
+
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    console.log ('initialize iscroll on menu');
+
+    var myScroll;
+    var initMyScroll;
+
+    function loaded() {
+        setTimeout(function () {
+            myScroll = new iScroll('nav-main-menu',{snap:'a'});
+            var main_menu_Element = document.getElementById("nav-main-menu"); 
+            myScroll.refresh();
+        }, 1000);
+        setTimeout(function () {
+            myScroll = new iScroll('nav-sub-menu',{snap:'a'});
+            var sub_menu_Element = document.getElementById("nav-sub-menu"); 
+            myScroll.refresh();
+        }, 1000);
+ 
+    };
+
+    function doTouch(e) {
+        if($('#swordfish-content').hasClass('offset-right') || $('#swordfish-content').hasClass('offset-left')){
+            e.preventDefault();
+            var touch = e.touches[0];
+            fLogo();
+        }
+    };
+
+    document.getElementById("swordfish-content").addEventListener('touchstart', function(e) {doTouch(e);}, false);
+
+    window.addEventListener('DOMContentLoaded', loaded, false);
+
+});
+</script>
+<!--<script type="text/javascript" src="js/lib/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.waterwheelCarousel.js"></script>-->
+
+<!-- END All Scripts
+<script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script> -->
+<!-- <script type="text/javascript" src="js/bootstrap-2.0.2.js"></script> -->
+<!-- END All Scripts -->
+</body>
+</html>

@@ -1,0 +1,150 @@
+/*Flexbox helper styles*/
+/* --------------------- FLEX PARENT DEFAULT RULES */
+.flex-container,
+.flex-container-start,
+.flex-container-center,
+.flex-container-end,
+.flex-container-fill {
+	display:-webkit-box;
+	display:-moz-box;
+	display:box;
+	
+	/* Default is Orient, Horizontal */
+	-moz-box-orient:horizontal;
+	-webkit-box-orient:horizontal;
+	box-orient:horizontal;
+
+	/* Default is Direction, Normal */
+	-moz-box-direction:normal;
+	-webkit-box-direction:normal;
+	box-direction:normal;
+
+	/* Default is Pack, Start */
+	-moz-box-pack:start;
+	-webkit-box-pack:start;
+	box-pack:start;
+
+	/* Default is Align, Start */
+	-moz-box-align:start;
+	-webkit-box-align:start;
+	box-align:start;
+}
+/* --------------------- FLEX CHILD DEFAULT RULES */
+.flex-container > *,
+.flex-container-start > *,
+.flex-container-center > *,
+.flex-container-end > *,
+.flex-container-fill > * {
+	box-flex:1;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	/*float:none !important;*/
+	/*width:auto !important;*/
+/*
+	box-flex:1;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+*/
+}
+/* --------------------- FLEX ORIENT RULES */
+.flex-orient-vertical {
+	-moz-box-orient:vertical;
+	-webkit-box-orient:vertical;
+	box-orient:vertical;
+}
+.flex-orient-horizontal {
+	-moz-box-orient:horizontal;
+	-webkit-box-orient:horizontal;
+	box-orient:horizontal;
+}
+/* --------------------- FLEX PACK RULES */
+/* This is how things should be arranged in the "orient" axis */
+.flex-container-center,
+.flex-pack-center {
+	-moz-box-pack:center;
+	-webkit-box-pack:center;
+	box-pack:center;
+}
+/*.flex-container-start,*/
+.flex-pack-start {
+	-moz-box-pack:start;
+	-webkit-box-pack:start;
+	box-pack:start;
+}
+.flex-container-end,
+.flex-pack-end {
+	-moz-box-pack:end;
+	-webkit-box-pack:end;
+	box-pack:end;
+}
+.flex-container-fill,
+.flex-pack-justify {
+	-moz-box-pack:justify;
+	-webkit-box-pack:justify;
+	box-pack:justify;
+}
+/* --------------------- FLEX ALIGN RULES */
+/* This is how things should be arranged in the axis perpendicular to the "orient" axis */
+.flex-container-center,
+.flex-align-center {
+	-moz-box-align:center;
+	-webkit-box-align:center;
+	box-align:center;
+}
+/*.flex-container-start,*/
+.flex-align-start {
+	-moz-box-align:start;
+	-webkit-box-align:start;
+	box-align:start;
+}
+.flex-container-end,
+.flex-align-end {
+	-moz-box-align:end;
+	-webkit-box-align:end;
+	box-align:end;
+}
+.flex-align-baseline {
+	-moz-box-align:baseline;
+	-webkit-box-align:baseline;
+	box-align:baseline;
+}
+.flex-container-fill,
+.flex-align-stretch {
+	-moz-box-align:stretch;
+	-webkit-box-align:stretch;
+	box-align:stretch;
+}
+/* --------------------- FLEX COMBO RULES */
+.flex-center-all {
+	-moz-box-pack:center;
+	-webkit-box-pack:center;
+	box-pack:center;
+	-moz-box-align:center;
+	-webkit-box-align:center;
+	box-align:center;
+}
+/* --------------------- FLEX BOX-FLEX RULES */
+.flex-0 {
+	box-flex:0 !important;
+	-webkit-box-flex:0 !important;
+	-moz-box-flex:0 !important;
+}
+.flex-1 {
+	box-flex:1 !important;
+	-webkit-box-flex:1 !important;
+	-moz-box-flex:1 !important;
+}
+.flex-2 {
+	box-flex:2 !important;
+	-webkit-box-flex:2 !important;
+	-moz-box-flex:2 !important;
+}
+.flex-3 {  
+	box-flex:3 !important;
+	-moz-box-flex:3 !important;
+	-webkit-box-flex:3 !important;
+}.flex-9 {  
+	box-flex:9 !important;
+	-moz-box-flex:9 !important;
+	-webkit-box-flex:9 !important;
+}

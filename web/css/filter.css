@@ -1,0 +1,81 @@
+
+.nav-filtermain-menu{
+    top:25;
+    left:0;
+    background-color:#f6f6f6;
+    float: left;
+    clear: both;
+    width: 100%;
+    hieght:100%;
+}
+.mainmenu-item,
+.mainmenu-item .button-icon,
+.mainmenu-item .button-text {
+    float: left;
+    min-width:40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    position: relative;
+}
+.mainmenu-item {
+    padding: 0 1em;
+    margin: 0;
+    color: #999;
+    border:none;
+    border-top: 1px solid rgba(255,255,255,0.95); border-bottom: 1px solid rgba(0,0,0,0.0625);
+    width: 100%;
+    line-height:50px; height:50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.mainmenu-item .button-icon,
+.mainmenu-item .button-text {
+    height: 44px;
+}
+.mainmenu-item .button-icon {
+    width:40px;
+    margin: 0 10px 0 -10px;
+}
+.mainmenu-item .button-text {
+    white-space: nowrap;
+    width: auto;
+}
+.mainmenu-item .button-text {
+    font-size: 18px;
+    color:#666;
+}
+
+.filtermenu-item {
+    padding: 0 1em;
+    margin: 0;
+    color: #999;
+    background-color: #fff;
+    border:none;
+    border-top: 1px solid rgba(255,255,255,0.95); border-bottom: 1px solid rgba(0,0,0,0.0625);
+    width: 100%;
+    line-height:50px; height:50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.filtermenu-item .filtermenu-icon {
+    padding: 0 1em;
+    float : left;
+}
+.filtermenu-item .filtermenu-chkBox {
+    float: right;
+}
+.filter-page{
+    
+}
+.filter-Dis, .filter-Brand, .filter-Price, .filter-Ship{
+    
+}
+
+.div-Dis, .div-Brand, .div-Price, .div-Ship{
+    
+}
+.div-Dis, .div-Brand, .div-Price, .div-Ship{display: none;}
+.nav-filtermain-menu {display: block;}

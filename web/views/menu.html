@@ -1,0 +1,102 @@
+<!-- START Nav Controller -->
+<div id="nav-wrapper" style="overflow: initial !important; height: 100%" ng-controller="NavCtrl">
+
+    <!-- START Browse Controller -->
+    <div ng-controller="BrowseCtrl" id="nav-main-menu">
+
+        <!-- START Main Menu -->
+        <nav class="shadow-down nav-main-menu" data-menu="main">
+            <!-- <a class="menu-item logo" data-menu-link="home" ng-click="navHome()"> -->
+            <a class="menu-item logo" data-menu-link="home">
+                <span class="button-icon sf-icon-house"></span>
+                <span class="button-text">Home</span>
+            </a>
+            <!-- START Calling function verticalApiCall() to populate dynamic verticals-->
+            <!--<a href="" class="menu-item" ng-click="verticalApiCall()">
+                <span class="button-icon sf-icon-bag"></span>
+                <span class="button-text">Shop Departments</span>
+            </a>-->
+            <!-- END Calling function verticalApiCall() to populate dynamic verticals-->
+            <a ng-repeat="(key,val) in MyMenuData.menu" class="menu-item" data-menu-link="{{key}}" ng-click="navMainMenuItem(this)">
+                <span class="button-icon {{val.class}}"></span>
+                <span class="button-text">{{val.title}}</span>
+            </a>
+        </nav>
+        <!-- END Main Menu -->
+
+        <!-- END Sub Menu -->
+        <nav id="nav-sub-menu" ng-repeat="(key,val) in MyMenuData.menu" class="shadow-down nav-sub-menu" data-menu="{{key}}">
+            <!-- <a class="menu-item logo" data-menu-link="home" ng-click="navHome()"> -->
+            <a class="menu-item logo" data-menu-link="home">
+                <span data-icon="&#x37;" class="button-icon"></span>
+                <span class="button-text">Home</span>
+            </a>
+            <a class="menu-item menu-return-bg" ng-click="navReturn(this)">
+                <span data-icon="&#x39;" class="button-icon"></span>
+                <span class="button-text">Main Menu</span>
+            </a>
+            <a class="menu-item current" data-menu-link="{{key}}">
+                <span class="button-icon {{val.class}}"></span>
+                <span class="button-text">{{val.title}}</span>
+            </a>
+            <a class="menu-item" ng-repeat="subItem in val.submenu" ng-click="navSubMenuItem(this)">
+                <!--<span class="button-icon small {{subItem.class}}"></span>-->
+                <span class="button-text pl-special">{{subItem.title}}</span>
+            </a>
+        </nav>
+        <!-- END Sub Menu -->
+
+        <!-- START Vertical menu to display-->
+        <nav class="nav-vert-menu">
+            <a class="menu-item menu-return-bg" ng-click="navMainReturn(this)">
+                <div data-icon="&#x39;" class="button-icon"></div>
+                <span class="menu-text">Menu</span>
+            </a>
+            <div  class="menu-item current">
+                <span data-icon="&#x2e;" class="button-icon"></span>
+                <span class="button-text">Shop Departments</span>
+            </div>
+            <a href="#/categoryImage/{{vert.verticalName}}" class="menu-item" ng-repeat="vert in verts" ng-click="categoryApiCall(vert.verticalName)">
+                <span class="button-text">{{vert.displayName}}</span>
+            </a>
+        </nav>
+        <!-- END Vertical menu to display-->
+
+        <!-- START Category menu to display-->
+        <nav class="nav-cat-menu">
+            <a class="menu-item" ng-click="navVertReturn()">
+                <span data-icon="&#x2e;" class="button-icon"></span>
+                <span class="button-text">Shop Departments</span>
+            </a>
+            <div  class="menu-item current">
+                <span class="button-text">{{verticalName}}</span>
+            </div>
+            <a class="menu-item" href="#/subCategoryImage/{{verticalName}}/{{cat.category.displayName}}" ng-repeat="cat in cats" ng-click="subCategoryApiCall(cat.category.displayName)">
+                <span class="button-text">{{cat.category.displayName}}</span>
+            </a>
+        </nav>
+        <!-- END Category menu to display-->
+
+        <!-- START SubCategory menu to display-->
+        <nav class="nav-subcat-menu">
+            <a class="menu-item" ng-click="navVertReturn()">
+                <span data-icon="&#x2e;" class="button-icon"></span> 
+                <span class="button-text">Shop Departments</span>
+            </a>
+            <a class="menu-item" ng-click="categoryApiCall(verticalName)" href = "#/categoryImage">
+                <span class="button-text">{{verticalName}}</span>
+            </a>
+            <div class="menu-item current">
+                <span class="button-text">{{categoryName}}</span>  
+            </div>
+                <a class="menu-item" href="#/browseProducts/{{verticalName}}/{{categoryName}}/{{subcat.subCategory.displayName}}" ng-click="browseSearchPage(this)" ng-repeat="subcat in subcats">
+                    <span class="button-text">{{subcat.subCategory.displayName}}</span>
+                </a>
+
+        </nav>
+        <!-- END SubCategory menu to display-->
+
+    </div>
+    <!-- END Browse Controller -->
+</div>
+<!-- END Nav Controller -->

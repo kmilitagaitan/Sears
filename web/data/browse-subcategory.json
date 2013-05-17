@@ -1,0 +1,48 @@
+{
+    "globalnavigation":{
+        "verticals":[{
+            "vertical":{
+                "displayname":"Appliances",
+                "urlname":"Appliances",
+                "categories":[{
+                    "category":{
+                        "displayname":"Microwaves",
+                        "urlname":"Microwaves",
+                        "subcategories":[{
+                            "subcategory":{
+                                "displayname":"Built-In Microwaves",
+                                "urlname":"Built-In Microwaves"
+                            }
+                        },{
+                        "subcategory":{
+                            "displayname":"Countertop Microwaves",
+                            "urlname":"Countertop Microwaves"
+                        }
+                    },{
+                    "subcategory":{
+                        "displayname":"Over the Range Microwaves",
+                        "urlname":"Over the Range Microwaves"
+                    }
+                }]
+            }
+        },{
+    "category":{
+        "displayname":"Dishwashers",
+        "urlname":"Dishwashers",
+        "subcategories":[{
+            "subcategory":{
+                "displayname":"Built-In Dishwashers",
+                "urlname":"Built-In Dishwashers"
+            }
+        },{
+        "subcategory":{
+            "displayname":"Portable Dishwashers",
+            "urlname":"Portable Dishwashers"
+        }
+    }]
+}
+}]
+}
+}]
+}
+}

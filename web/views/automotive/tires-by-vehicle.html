@@ -1,0 +1,28 @@
+<div class="automotive-page" ngController="AutomotiveTiresFitmentCtrl">
+  <div class="optionsContainer trimEngineOptions clearfix">
+    <p>Select your vehicle</p>
+
+      <div class="label">Year</div>
+      <select id="yearId" name="Year" ng-model="currentYear" ng-options="year.name for year in years">
+        <option value="">Year</option>
+      </select>
+
+      <div class="label">Make</div>
+      <select id="makeId" name="Make"  ng-model="currentMake" ng-options="make.name for make in makes">
+        <option value="">Make</option>
+      </select>
+
+      <div class="label">Model</div>
+      <select id="modelId" name="Model" ng-model="currentModel" ng-options="model.name for model in models">
+        <option value="">Model</option>
+      </select>
+
+      <div class="label">Trim</div>
+      <select name="Trim" id="trimId" ng-model="currentTrim" ng-options="trim.name for trim in trims">
+        <option value="">Trim</option>
+      </select>
+      
+      <input class="button form-button orange" type="button" ng-click="findTires()" value="Done">
+      
+    </div>  
+</div>

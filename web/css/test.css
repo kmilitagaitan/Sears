@@ -1,0 +1,38 @@
+body,ul,li {
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-size:15px;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+/*  -webkit-box-sizing:border-box;*/
+    font-family:helvetica;
+/*  padding-bottom:45px;    /*  This prevents the carousel-content to lock if the user swipes down outside of the screen.
+                                NOT needed if in home screen mode. */
+}
+
+header,
+nav,
+footer {text-align: center;
+    padding:1em;
+    margin:0;
+}
+
+
+header {background-color:rgba(0,255,255,0.5);}
+nav {background-color:rgba(255,0,255,0.5);}
+footer {background-color:rgba(255,255,0,0.5);}
+section {background-color:rgba(0,255,0,0.5);}
+
+p {
+    padding:20px;
+    margin:0;
+    font-size:1.4em;
+}
+
+#carousel-hero {background-color:goldenrod;}
+#carousel-promos {background-color:plum;}
+#carousel-recommended {background-color:chartreuse;}
+#carousel-trending {background-color:coral;}

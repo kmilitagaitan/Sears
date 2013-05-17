@@ -1,0 +1,727 @@
+/* # Form styles */
+/*
+## Basic Inputs
+Here are examples of basic HTML forms and form fields:
+```
+<form>
+    <fieldset>
+        <legend>Fieldset Legend:  Input</legend>
+        <label for="input1">Label:  Input <span>Validation Hinting</span></label>
+        <input id="input1" type="" value="" placeholder="Placeholder Text...">
+        <label for="input2">Label:  Input <span>Validation Hinting</span></label>
+        <input id="input2" type="" value="" autofocus placeholder="Placeholder Text (with autofocus)...">
+    </fieldset>
+</form>
+```
+## Checkboxes
+Placement of the checkbox input in relation to its label matters.  See how the different methods render:
+```
+<form>
+    <fieldset class="fields-checkbox">
+        <legend>Checkboxes <span>Label First</span></legend>
+        <label for="input-checkbox1a">Ketchup</label>
+        <input id="input-checkbox1a" type="checkbox" value="[type=checkbox]">
+        <label for="input-checkbox1b">Mustard</label>
+        <input id="input-checkbox1b" type="checkbox" value="[type=checkbox]">
+    </fieldset>
+    <fieldset class="fields-checkbox">
+        <legend>Checkboxes <span>Label Last</span></legend>
+        <input id="input-checkbox2a" type="checkbox" value="[type=checkbox]">
+        <label for="input-checkbox2a">Ketchup</label>
+        <input id="input-checkbox2b" type="checkbox" value="[type=checkbox]">
+        <label for="input-checkbox2b">Mustard</label>
+    </fieldset>
+    <fieldset class="fields-checkbox">
+        <legend>Checkboxes <span>Inside Label</span></legend>
+        
+        <label for="input-checkbox3a"><input id="input-checkbox3a" type="checkbox" value="[type=checkbox]">Ketchup</label>
+        
+        <label for="input-checkbox3b">Mustard<input id="input-checkbox3b" type="checkbox" value="[type=checkbox]"></label>
+    </fieldset>
+</form>
+```
+## Radio Buttons
+Placement of the radio input in relation to its label matters.  See how the different methods render:
+```
+<form>
+    <fieldset class="fields-checkbox">
+        <legend>Radio Buttons <span>Label First</span></legend>
+        <label for="input-radio2a">Paper</label>
+        <input id="input-radio2a" name="input-radio2" type="radio" value="[type=radio]">
+        <label for="input-radio2b">Plastic</label>
+        <input id="input-radio2b" name="input-radio2" type="radio" value="[type=radio]">
+    </fieldset>
+    <fieldset class="fields-checkbox">
+        <legend>Radio Buttons <span>Label Last</span></legend>
+        <input id="input-radio1a" name="input-radio1" type="radio" value="[type=radio]">
+        <label for="input-radio1a">Paper</label>
+        <input id="input-radio1b" name="input-radio1" type="radio" value="[type=radio]">
+        <label for="input-radio1b">Plastic</label>
+    </fieldset>
+    <fieldset class="fields-checkbox">
+        <legend>Radio Buttons <span>Inside Label</span></legend>
+        
+        <label for="input-radio3a"><input id="input-radio3a" name="input-radio3" type="radio" value="[type=radio]">Paper</label>
+        
+        <label for="input-radio3b">Plastic<input id="input-radio3b" name="input-radio3" type="radio" value="[type=radio]"></label>
+    </fieldset>
+</form>
+```
+*/
+form, fieldset, legend, input, label, select, option, .form-button, a.form-button {
+    color: #333;
+    font-size: 1em;
+    text-align: center;
+    /*float: left;*/
+    /*font-size: 1em;*/
+    /*text-align: center;*/
+    /*width: 90%;*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+legend {
+    color: #666;
+    /*float: left;*/
+    /*font-size: 1.2em;*/
+    text-align: left;
+    /*padding:0 0.25em;*/
+    /*margin:0 0.25em;*/
+}
+label {
+    color: #999;
+    /*float: left;*/
+    width:auto;
+    /*font-size:1.1em;*/
+    text-align: left;
+    padding:0.75em 0 0.25em;
+}
+legend small,
+label small {font-size:0.6em; padding-left:0.5em;}
+fieldset {padding:0.5em 0 10px; margin:0; border:none;}
+legend {}
+
+
+input, textarea, button, select, .form-button, a.form-button {
+    /*font-size:1em;*/
+    /*border-radius:0.125em;*/
+    border-radius:3px;
+    color:#333;
+    width:100%;
+    height:32px;
+    line-height:32px;
+
+    box-shadow: 0 0.125em 0.5em -0.125em rgba(0,0,0,0.5) inset;
+
+    border: 1px rgba(0,0,0,0.25) solid;
+    /*border-top: 1px rgba(0,0,0,0.25) solid;
+    border-right: 1px rgba(0,0,0,0.125) solid;
+    border-bottom: 1px rgba(0,0,0,0.125) solid;
+    border-left: 1px rgba(0,0,0,0.125) solid;*/
+
+    padding:0 0.5em;
+    margin:0 0.25em 0.25em 0;
+    background: white;
+}
+button.form-button,
+input[type=button].form-button,
+a.form-button {
+    box-shadow: 0 0.125em 0.125em -0.125em rgba(0,0,0,0.5) inset;
+}
+.form-button.active {
+    /* insert form-button active class here */
+    color: #000 !important;
+    background: -webkit-linear-gradient(270deg, rgb(207, 207, 207) 0%, rgb(245, 245, 245) 99%) !important;
+    background:    -moz-linear-gradient(270deg, rgb(207, 207, 207) 0%, rgb(245, 245, 245) 99%) !important;
+    background:     -ms-linear-gradient(270deg, rgb(207, 207, 207) 0%, rgb(245, 245, 245) 99%) !important;
+    background:      -o-linear-gradient(270deg, rgb(207, 207, 207) 0%, rgb(245, 245, 245) 99%) !important;
+    background:         linear-gradient(to bottom, rgb(207, 207, 207) 0%, rgb(245, 245, 245) 99%) !important;
+}
+/* 
+## Select / Option Styles
+```
+<label for="input-text1">Label <span>input[type=text]</span></label>
+<select id="input-text1" type="text" value="Input input[type=text]">
+    <option value="a">Value "A"</option>
+    <option value="b">Value "B"</option>
+    <optgroup label="Label C">
+        <option value="c1">Value "C1"</option>
+        <option value="c2">Value "C2"</option>
+        <option value="c3">Value "C3"</option>
+        <option value="c4">Value "C4"</option>
+        <option value="c5">Value "C5"</option>
+    </optgroup>
+    <option value="d">Value "D"</option>
+    <option value="e">Value "E"</option>
+</select>
+```
+*/
+select {}
+optgroup {}
+option {}
+datalist {}
+keygen {}
+output {}
+/* 
+## Other Input Types
+
+There is an input type for almost every conceivable kind of data format.  On a mobile device, the type attribute governs the layout of the soft keyboard that pops up.  Choose wisely...
+
+### Color
+```
+<label for="input-color">Label <span>input[type=color]</span></label>
+<input id="input-color" type="color" value="#ff0000" placeholder="Placeholder...">
+```
+*/
+/* 
+### Date
+```
+<label for="input-date">Label <span>input[type=date]</span></label>
+<input id="input-date" type="date" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Date Time
+```
+<label for="input-datetime">Label <span>input[type=datetime]</span></label>
+<input id="input-datetime" type="datetime" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Date Time Local
+```
+<label for="input-datetime-local">Label <span>input[type=datetime-local]</span></label>
+<input id="input-datetime-local" type="datetime-local" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Email
+```
+<label for="input-email">Label <span>input[type=email]</span></label>
+<input id="input-email" type="email" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### File
+```
+<label for="input-file">Label <span>input[type=file]</span></label>
+<input id="input-file" type="file" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Month
+```
+<label for="input-month">Label <span>input[type=month]</span></label>
+<input id="input-month" type="month" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Number
+```
+<label for="input-number">Label <span>input[type=number]</span></label>
+<input id="input-number" type="number" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Password
+```
+<label for="input-password">Label <span>input[type=password]</span></label>
+<input id="input-password" type="password" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Range
+```
+<label for="input-range">Label <span>input[type=range]</span></label>
+<input id="input-range" type="range" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Search
+```
+<label for="input-search">Label <span>input[type=search]</span></label>
+<input id="input-search" type="search" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Tel
+```
+<label for="input-tel">Label <span>input[type=tel]</span></label>
+<input id="input-tel" type="tel" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Text
+```
+<label for="input-text">Label <span>input[type=text]</span></label>
+<input id="input-text" type="text" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Time
+```
+<label for="input-time">Label <span>input[type=time]</span></label>
+<input id="input-time" type="time" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### URL
+```
+<label for="input-url">Label <span>input[type=url]</span></label>
+<input id="input-url" type="url" value="" placeholder="Placeholder...">
+```
+*/
+/* 
+### Week
+```
+<label for="input-week">Label <span>input[type=week]</span></label>
+<input id="input-week" type="week" value="" placeholder="Placeholder...">
+```
+*/
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='email'],
+input[type='file'],
+input[type='month'],
+input[type='number'],
+input[type='password'],
+input[type='range'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='time'],
+input[type='url'],
+input[type='week'] {
+    /*height: 32px; */
+    line-height: 32px;
+    text-align: left !important;
+    /*box-shadow: 0 0.125em 0.5em -0.125em rgba(0,0,0,0.75) inset;*/
+}
+/* 
+## Checkbox & Radio Button input styles 
+```
+<form>
+    <fieldset class="fields-checkbox">
+        <legend>Legend <span>input[type=checkbox]</span></legend>
+        <label for="input-checkbox">Label <span>input[type=checkbox]</span></label>
+        <input id="input-checkbox" type="checkbox" value="[type=checkbox]">
+    </fieldset>
+    <fieldset class="fields-checkbox">
+        <input id="input-radio" type="radio" value="[type=radio]">
+        <label for="input-radio">Label <span>input[type=radio]</span></label>
+    </fieldset>
+</form>
+```
+*/
+input[type='checkbox'],
+input[type='radio'] {
+    /*float: left;*/
+    width: 1em;
+    height: 32px;
+    line-height: 32px;
+}
+
+input[type='radio'].radioSmall {
+    /*float: left;*/
+    width: 1em;
+/*    height: 44px; */
+    height: 15px !important;
+}
+
+/* 
+## Basic Button styles 
+*/
+
+/*
+There are 3 ways to invoke a button with HTML tags and CSS classes:
+
+- button.form-button
+
+- input[type=button].form-button
+
+- a.form-button
+
+```
+<form>
+    <fieldset>
+        <legend>Legend <span>button.form-button</span></legend>
+        <button class="form-button">Button</button>
+        <button class="form-button primary">Primary Button</button>
+        <button class="form-button orange">Orange Button</button>
+        <button class="form-button orange disabled">Orange Button (Disabled class)</button>
+        <button class="form-button orange" disabled="disabled">Orange Button (Disabled attribute)</button>
+    </fieldset>
+</form>
+```
+```
+<form>
+    <fieldset>
+        <legend>Legend <span>input[type=button].form-button</span></legend>
+        <input id="input-button" class="form-button" type="button" value="Input Button">
+        <input id="input-button" class="form-button primary" type="button" value="Primary Input Button">
+        <input id="input-button" class="form-button orange" type="button" value="Orange Input Button">
+        <input id="input-button" class="form-button orange disabled" type="button" value="Orange Input Button (Disabled class)">
+        <input id="input-button" class="form-button orange" type="button" value="Orange Input Button (Disabled attribute)" disabled="disabled">
+    </fieldset>
+</form>
+```
+```
+<form>
+    <fieldset>
+        <legend>Legend <span>a.form-button</span></legend>
+        <a href="#" class="form-button">Anchor Button</a>
+        <a href="#" class="form-button primary">Primary Anchor Button</a>
+        <a href="#" class="form-button orange">Orange Anchor Button</a>
+        <a href="#" class="form-button orange disabled">Orange Anchor Button (Disabled class)</a>
+    </fieldset>
+</form>
+```
+*/
+
+/* 
+## Active Button State styles 
+*/
+
+/*
+There are 3 ways to invoke a button with HTML tags and CSS classes:
+
+- button.form-button
+
+- input[type=button].form-button
+
+- a.form-button
+
+```
+<form>
+    <fieldset>
+        <legend>Legend <span>button.form-button</span></legend>
+        <button class="form-button active">Button</button>
+        <button class="form-button active primary">Primary Button</button>
+        <button class="form-button active orange">Orange Button</button>
+        <button class="form-button active orange disabled">Orange Button (Disabled class)</button>
+        <button class="form-button active orange" disabled="disabled">Orange Button (Disabled attribute)</button>
+    </fieldset>
+</form>
+```
+```
+<form>
+    <fieldset>
+        <legend>Legend <span>input[type=button].form-button</span></legend>
+        <input id="input-button" class="form-button active" type="button" value="Input Button">
+        <input id="input-button" class="form-button active primary" type="button" value="Primary Input Button">
+        <input id="input-button" class="form-button active orange" type="button" value="Orange Input Button">
+        <input id="input-button" class="form-button active orange disabled" type="button" value="Orange Input Button (Disabled class)">
+        <input id="input-button" class="form-button active orange" type="button" value="Orange Input Button (Disabled attribute)" disabled="disabled">
+    </fieldset>
+</form>
+```
+```
+<form>
+    <fieldset>
+        <legend>Legend <span>a.form-button</span></legend>
+        <a href="#" class="form-button active">Anchor Button</a>
+        <a href="#" class="form-button active primary">Primary Anchor Button</a>
+        <a href="#" class="form-button active orange">Orange Anchor Button</a>
+        <a href="#" class="form-button active orange disabled">Orange Anchor Button (Disabled class)</a>
+    </fieldset>
+</form>
+```
+*/
+
+/*
+## Button with Icon styles
+*/
+
+/*
+Only 2 of the above methods are good for buttons with icons because they are container elements:
+
+- button.form-button
+
+- a.form-button
+
+```
+<form>
+    <fieldset>
+        <legend>Legend <span>button.form-button</span></legend>
+        <button class="form-button">
+            <span class="button-inner">
+                <span class="button-text">Add to Cart</span>
+                <span class="button-icon sf-icon-cart small"></span>
+            </span>
+        </button>
+        <button class="form-button primary">
+            <span class="button-inner">
+                <span class="button-icon sf-icon-cart small"></span>
+                <span class="button-text">Add to Cart</span>
+            </span>
+        </button>
+    </fieldset>
+</form>
+```
+```
+<form>
+    <fieldset>
+        <legend>Legend <span>a.form-button</span></legend>
+
+        <a href="#" class="form-button">
+            <span class="button-inner">
+                <span class="button-text">Add to Cart</span>
+                <span class="button-icon sf-icon-cart small"></span>
+            </span>
+        </a>
+        <a href="#" class="form-button primary">
+            <span class="button-inner">
+                <span class="button-icon sf-icon-cart small"></span>
+                <span class="button-text">Add to Cart</span>
+            </span>
+        </a>
+
+    </fieldset>
+</form>
+```
+*/
+
+/*
+## Button with Multi-icon styles
+*/
+
+/*
+Only 2 of the above methods are good for buttons with icons because they are container elements:
+
+- button.form-button
+
+- a.form-button
+```
+<form>
+    <fieldset>
+        <a href="#" class="form-button" id="">
+            <span class="button-text left">Scan</span>
+            <span class="button-icon-multi"><span class="button-icon sf-icon-scan"></span></span>
+            <span class="button-icon-multi"><span class="button-icon sf-icon-barcode"></span></span>
+        </a>
+    </fieldset>
+</form>
+```
+*/
+
+input[type='image'] {}
+input[type='button'], 
+input[type='submit'], 
+input[type='reset'], 
+button, 
+.form-button,
+.form-button.secondary,
+.form-button.tertiary, 
+a.form-button,
+a.form-button.secondary,
+a.form-button.tertiary {
+    color:#999;
+    background-color:#eee;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#e9e9e9));
+    background: -webkit-linear-gradient(270deg, rgb(255, 255, 255) 0%, rgb(233, 233, 233) 100%);
+    background:    -moz-linear-gradient(270deg, rgb(255, 255, 255) 0%, rgb(233, 233, 233) 100%);
+    background:     -ms-linear-gradient(270deg, rgb(255, 255, 255) 0%, rgb(233, 233, 233) 100%);
+    background:      -o-linear-gradient(270deg, rgb(255, 255, 255) 0%, rgb(233, 233, 233) 100%);
+    background:         linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(233, 233, 233) 100%);
+    padding-left: 1em;
+    padding-right: 1em;
+}
+input[type='button'].orange, 
+button.orange, 
+.form-button.orange,
+.form-button.primary,
+a.form-button.orange,
+a.form-button.primary {
+    color: white;
+    background: #ff661d;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe8c43), color-stop(100%, #ff4b03));
+    background: -webkit-linear-gradient(to top, #fe8c43 0%, #ff4b03 100%); 
+    background:    -moz-linear-gradient(to top, #fe8c43 0%, #ff4b03 100%);
+    background:     -ms-linear-gradient(to top, #fe8c43 0%, #ff4b03 100%);
+    background:      -o-linear-gradient(to top, #fe8c43 0%, #ff4b03 100%);
+    background:         linear-gradient(to bottom, #fe8c43 0%, #ff4b03 100%);
+}
+.form-button.orange.disabled,
+.form-button.primary.disabled,
+a.form-button.orange.disabled,
+a.form-button.primary.disabled {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #febb8f), color-stop(100%, #feab76));
+    background: -webkit-linear-gradient(to top, #febb8f 0%, #feab76 100%);
+    background:    -moz-linear-gradient(to top, #febb8f 0%, #feab76 100%);
+    background:     -ms-linear-gradient(to top, #febb8f 0%, #feab76 100%);
+    background:      -o-linear-gradient(to top, #febb8f 0%, #feab76 100%);
+    background:         linear-gradient(to bottom, #febb8f 0%, #feab76 100%);
+    /*opacity:0.5;*/
+    /*filter:alpha(opacity=50);*/ /* For IE8 and earlier */
+}
+.form-button.orange:disabled,
+.form-button.primary:disabled,
+input:disabled, button:disabled, a:disabled {
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+input[type='button'].red, 
+button.red, 
+.form-button.red,
+a.form-button.red {
+    color: white;
+    background: #E82C4E;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F7394C), color-stop(100%, #EB0731));
+    background: -webkit-linear-gradient(to top, #F7394C 0%, #EB0731 100%); 
+    background:    -moz-linear-gradient(to top, #F7394C 0%, #EB0731 100%);
+    background:     -ms-linear-gradient(to top, #F7394C 0%, #EB0731 100%);
+    background:      -o-linear-gradient(to top, #F7394C 0%, #EB0731 100%);
+    background:         linear-gradient(to bottom, #F7394C 0%, #EB0731 100%);
+}
+.form-button {
+    /*width: auto;*/
+    min-width: 100px;
+    float: left;
+    display: inline;
+    position: relative;
+}
+.form-button.wide-button {
+    width: 100%;
+}
+.button-icon,
+.button-text {
+    min-width:40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    position: relative;
+    /*height: 100%;*/
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 32px;
+    height: 50px;
+    width: auto;
+    padding: 4px 0 0;
+    /*white-space: nowrap;*/
+}
+.button-text {
+    white-space: nowrap; 
+}
+.button-text.left {
+    top: -0.25em;
+}
+.button-icon {
+    font-size: 32px;
+}
+.button-icon.small {
+    /*font-size: 2em;*/
+    font-size: 36px;
+    /*line-height: 1;*/
+    /*padding-top: 1em;*/
+}
+.button-icon-multi {
+    /*position: relative;*/
+    position: absolute;
+    top: -0.25em;
+    right: 0.5em;
+    height: 50px;
+    width: auto;
+}
+.button-icon-multi .button-icon {
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;*/
+    height: 50px;
+    /*width: 60px;*/
+    text-align: center;
+    display: inline-block;
+}
+.button-multi {
+    /*position: relative;*/
+}
+.button-multi .button-icon {
+    position: absolute;
+    top: -0.25em;
+    right: 0;
+    height: 50px;
+    width: auto;
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;*/
+    height: 50px;
+    /*width: 60px;*/
+    text-align: center;
+    display: inline-block;
+}
+.button-inner .button-text {
+    top: -0.5em;
+}
+.button-inner .button-text,
+.button-inner .button-icon {
+    margin: 0 0.125em;
+}
+a.form-button span {/*text-align: center;*/}
+input.app-icon {
+    /*text-align: center; padding-right: 50px; background: transparent url(../images/under_construction.jpg) 90% 50% no-repeat; background-size: 36px;*/
+}
+a.form-button span.app-icon {
+    /*width: 50px; height: 32px; text-align: center; float: right; background: transparent url(../images/under_construction.jpg) 90% 50% no-repeat; background-size: 36px;*/
+}
+.app-icon-scan {
+    /*background-image:url(../images/icon-scan.png) !important;*/
+}
+
+fieldset input[type='button'], 
+fieldset button, 
+fieldset .form-button {
+    /*margin-left:0.5em*/
+    text-align: center;
+} 
+
+fieldset input[type='button']:first-child, 
+fieldset button:first-child, 
+fieldset .form-button:first-child,
+#searchBar input[type='button'], 
+#searchBar button, 
+#searchBar .form-button {
+    /*margin-left:0*/
+}
+
+fieldset.fields-checkbox {
+    clear: both;
+}
+fieldset.fields-checkbox label {
+    margin-left:0.25em;
+    margin-right:0.25em;
+}
+fieldset.fields-checkbox input[type='checkbox'],
+fieldset.fields-checkbox input[type='radio'] {
+    top:0.25em;
+    padding:0;
+    margin: 0;
+    background-color: green;
+}
+
+fieldset .field-required {
+    padding:1em 0.5em;
+    opacity:0.6;
+    font-size: 0.88em;
+}
+fieldset .field-error {
+    padding:0;
+    margin: 0;
+    color: red;
+    font-size: 0.6875em;
+    line-height:20px;
+}
+fieldset .field-text {
+    padding:0;
+    padding-top:0;
+    padding-bottom:0;
+    margin: 0;
+    font-size: 0.6875em;
+    line-height:20px;
+    float: left;
+    text-align: left;
+}

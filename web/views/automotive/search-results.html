@@ -1,0 +1,34 @@
+<div class="automotive-results">
+  <div class="vehicle" ng-click="selectVehicle()">
+    {{vehicleName}}
+        <div class="disclosure-close"></div>
+  </div>
+  <div class="resultsbar">
+    {{items.length}} items found.
+    <div class="toolbar">
+      <div class="button">Refine</div>
+      <div class="button">Sort</div>
+    </div>
+  </div>
+  <ul>
+    <li ng-repeat="item in items">
+      <div class="product" ng-click="viewProductDetails()">
+        <div class="thumbnail">
+          <img src="{{item.addVals.imageUrls[0].url}}">
+        </div>
+        <div class="detailspane">
+          <div class="brand">{{item.brandName}}</div>
+          <div class="title">{{item.name}}</div>
+          <div class="productinfo">
+            <div class="rating">
+              <img class="stars" ng-src="images/automotive/stars_placeholder.png">({{item.addVals.reviewRatingUrls.length}})
+            </div>
+        </div>
+      </div>
+      <div class="price">
+        <div class="cutprice">${{item.addVals.cutPrice}}</div>
+        <div class="displayprice">${{item.addVals.displayPrice}}</div>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,89 @@
+/* # Layout styles */
+
+/* ## SwordFish Container styles
+Containers for SwordFish app modules.
+```
+<div class="box-test" style="overflow: hidden; width:320px; height: 480px;">
+    <div class="box-test" id="swordfish">
+        <div class="box-test" id="swordfish-menu">SwordFish &raquo; Menu</div>
+        <div class="box-test" id="swordfish-header">SwordFish &raquo; Header</div>
+        <div class="box-test" id="swordfish-content">
+            <div class="box-test" id="swordfish-search">SwordFish &raquo; Content &raquo; Search</div>
+            <div class="box-test" id="swordfish-view">SwordFish &raquo; Content &raquo; View</div>
+        </div>
+    </div>
+</div>
+```
+*/
+
+#swordfish {/* parent container */
+    position: relative; top:0; right:0; bottom:0; left:0;
+}
+#swordfish-menu {/* child container */
+    position: absolute; top:50px; left:0; 
+    width:100%; 
+    z-index:-2;
+}
+
+#swordfish-header {/* child container */
+    position: fixed;
+    /*top: 0;*//* this is default */
+    /*left: 0;*//* this is default */
+    width:100%; 
+    z-index:4;
+    min-width: 320px;
+}
+#swordfish-content {/* child container */
+    position: absolute; top:50px; left:0; 
+    width:100%; 
+    z-index:2;
+    min-width: 320px;
+    min-height: 600px;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    background-color:white;
+}
+#swordfish-search {/* grand-child container */
+    position: relative; top:0; left:0; 
+    width:100%;
+    min-width: 320px;
+}
+#swordfish-view {/* grand-child container */
+    position: relative; top:0; left:0; 
+    width:100%;
+    min-width: 320px;
+}
+
+.hybrid-view {margin-top:-50px !important;}
+
+/* ## Sliding Tray styles
+Containers for Non-SwordFish app modules, i.e., sliding trays.
+```
+<div class="box-test" style="overflow: hidden; width:320px; height: 480px;">
+    <div class="content-tray">
+        <div class="partial-inner">Tray Content</div>
+    </div>
+</div>
+```
+*/
+.content-tray {
+    /*display:none;*/
+    z-index:1;
+    position: absolute;
+    top:50px;
+    left:0;
+    /*left:80%;*/
+    width: 80%;
+    /*height: auto;*/
+    min-height: 10em;
+    /*margin: 0 0 0 120%;*/
+    padding: 0;
+    text-align: center;
+    background: white;
+}
+.profile-container .partial {
+    /*width: 100%;*/
+    /*margin-left: 0;*/
+    /*margin-top: 50px;*/
+}

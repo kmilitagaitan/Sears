@@ -1,0 +1,18 @@
+<div ng-controller="NavCtrl">
+    <header id="header-wrapper" class="shadow-down">
+        <div class="header-button menu" data-flag="menu">
+            <div data-icon="&#x32;" aria-hidden="true" class="button-icon"><span>Menu</span></div>
+        </div>
+        <div class="header-button logo" data-flag="logo">
+            <span>{{brand}}</span>
+        </div>
+        <div class="header-button cart" data-flag="cart">
+            <span class="count">{{countCart}}</span>
+            <div data-icon="&#x2d;" aria-hidden="true" class="button-icon"><span>Cart</span></div>
+        </div>
+        <div class="header-button account" data-flag="account">
+            <span class="count">{{countStatus}}</span>
+            <div data-icon="&#x29;" aria-hidden="true" class="button-icon"><span>Profile</span></div>
+        </div>
+    </header>
+</div>

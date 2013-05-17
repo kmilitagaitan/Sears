@@ -1,0 +1,674 @@
+
+/*********************** KMART css for k_dod deals *****************************/
+
+#k_dod_nav_bar{
+    width: 100%;
+    height: 50px;
+    display: block;
+    background-image: url("../images/dod/Kmart-deal-of-the-day-title.png");
+    background-size: 100% 100%;
+
+}
+/*
+
+#k_dod_nav_bar div:first-child{
+    width:20%;
+    height:35px;
+    display: block;
+    float:left;
+    margin-top: 5px;
+
+}
+
+
+#k_dod_nav_bar div:first-child a{
+    width:78%;
+    height: 100%;
+    display:block;
+    margin-left: 10%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+*/
+
+
+
+#k_top3DealsWrap{
+    width:100%;
+    height: 230px;
+    display: block;
+    background-color: rgba(211, 211, 211, 1);
+    /*margin: 0px 0px 0px 0px;*/
+}
+
+
+
+#k_top3DealsWrap ul{
+    list-style: none;
+    display: block;
+    float: left;
+    height: 100%;
+    padding-top: 15px!important;
+    margin-left: 10%!important;
+    text-align: left;
+}
+
+#k_top3DealsWrap ul li{
+    display: block;
+    float: left;
+    margin-right: 10px!important;
+    height: 200px!important;
+    text-align: center;
+    /*font-family: helveticaneue,sans-serif;*/
+    font-size: 18px;
+    line-height: 140%;
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+#k_top3DealsWrap ul li img{
+    width: 100%;
+    height: 112px;
+    display: block;
+}
+
+#k_top3DealsWrap ul li div{
+    width: 100%;
+    height: 88px;
+    padding: 4px;
+
+}
+
+#k_top3DealsWrap ul li div p{
+    display:block;
+    margin: 0;
+    /*overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;*/
+    text-align: left;
+    text-indent: 0px;
+    color:#808080;
+    max-height: 54px;
+    overflow: hidden;
+
+}
+
+
+/*********************** end css for k_dod deals *****************************/
+
+
+/*********************** SEARS deals of the day *****************************/
+
+#top4DealsWrap{
+    width:100%;
+    height:315px;
+    background-color: rgba(211, 211, 211, 1);
+    padding: 5px;
+}
+
+#top4DealsWrap>div{
+  width:100% !important;
+  height: 100% !important;
+}
+
+
+.dod_deal_in_top4deals:nth-child(odd){
+    float: left;
+    width: 49.5%;
+    height: 150px;
+    display: block;
+    /* margin: 5px 5px 5px 5px;*/
+    background-color: white;
+
+}
+
+.dod_deal_in_top4deals:nth-child(even){
+    float: right;
+    width: 49.5%;
+    height: 150px;
+    display: block;
+    background-color: white;
+}
+
+.dod_deal_in_top4deals:nth-child(1){
+   margin-bottom: 5px;
+}
+.dod_deal_in_top4deals:nth-child(2){
+    margin-bottom: 5px;
+}
+
+
+.dod_top4_image_container{
+    width:100% ;
+    height:100px;
+    display:block;
+}
+
+.dod_top4_description_container{
+    width:100%;
+    max-height: 50px;
+    display: block;
+    float:left;
+    padding-left: 5px;
+    color: #808080;
+}
+.dod_top4_description_container>a>p{
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+    font-family: "open sans";
+    line-height: 15px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #808080;
+    overflow: hidden;
+    margin:0px;
+}
+
+.dod_top4_description_container>p:last-child{
+    height: 20px;
+    line-height: 20px;
+    margin: 0px!important;
+}
+
+
+
+
+/*********************** end sears deals of the day *****************************/
+
+
+
+/*********************** common css for all deals pages *************************/
+
+
+.deals_nav_bar{
+    width: 100%;
+    height: 50px;
+    display: block;
+    background-image: url("../images/dod/nav_bar_background.jpg");
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+#nav_bar_back_btn {
+    width:5%;
+    height:50%;
+    display: block;
+    float:left;
+    margin-top: 12px;
+    margin-left: 8%;
+    background-image: url("../images/dod/arrow-copy-1332.png");
+    background-color: transparent;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+
+#dod_nav_bar{
+    width: 100%;
+    height: 50px;
+    display: block;
+    background-image: url("../images/dod/Sears-deal-of-the-day-title.png");
+    background-size: 100% 100%;
+
+}
+/*
+#dod_nav_bar div:first-child{
+    width:20%;
+    height:35px;
+    display: block;
+    float:left;
+    margin-top: 5px;
+}
+
+#dod_nav_bar div:first-child a{
+    width:78%;
+    height: 100%;
+    display:block;
+    margin-left: 10%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}*/
+
+
+.dod-footer-bar{
+  border:none;
+  position: fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  height:59px;
+  padding: 10px 10% 10px 10%;
+  z-index: 1000;
+  background: none repeat scroll 0 0 rgb(253, 253, 253);
+  border-top: 1px solid #ccc;
+  box-shadow: 0px -5px 9px -4px #6B6B6B;
+    -webkit-box-shadow: 0px -5px 9px -4px #6B6B6B;
+    -moz-box-shadow: 0px -5px 9px -4px #6B6B6B;
+    -o-box-shadow: 0px -5px 9px -4px #6B6B6B;
+}
+
+.dod-footer-bar div{
+  width:100%;
+  height:35px;
+}
+
+.dod-footer-bar div button{
+    width:100%;
+    display: block;
+    float:left;
+    border-radius: 5px;
+    margin: 0px !important;
+    -webkit-border-radius: 5px;
+    text-align: center;
+}
+
+
+#dod_first_header_fixed{
+    width:100%;
+    height:30px;
+    font-family: "open sans",sans-serif;
+    font-size: 14px;
+    /*line-height: 20px;*/
+    color:white;
+}
+#second_dod_header_fixed{
+    width:100%;
+    height:30px;
+    font-family: "open sans",sans-serif;
+    font-size: 14px;
+    /*line-height: 20px;*/
+    color:white;
+
+}
+
+
+.header_deals_text{
+display: inline-block;
+float:left;
+margin-top: 5px;
+margin-left: 2%;
+opacity: 1.0;
+z-index: 1;
+}
+
+.header_deals_text span{
+ opacity: 1.0;
+ z-index: 1;
+}
+
+
+#dod_timer{
+display: inline-block;
+float:right;
+margin-right: 2%;
+margin-top: 5px;
+}
+
+#more_deals_wrap{
+    width:100%;
+}
+
+
+.dod_top-deal_in_featured_deals{
+    width:100%;
+    height:100px;
+     padding: 3px;
+
+}
+.dod_featured_deals_ul{
+    list-style: none;
+   /* margin:0px 0px 0px 0px;*/
+}
+
+
+
+.dod_image_container{
+  width: 35%;
+  height:100%;
+  float:left;
+}
+
+.dod_image_container img{
+    width:100%;
+    height:100%;
+    display: block;
+
+}
+
+.dod_description_container{
+    height:100%;
+    width:59%;
+    display:block;
+    float:left;
+    font-family : "open sans",sans-serif;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+
+}
+
+.dod_description_container a:first-child{
+    display: block;
+    float:left;
+    height: 75%;
+    width: 100%;
+    line-height: 20px;
+}
+
+.dod_description_container a>p:first-child{
+    margin: 0px;
+    height: 100%;
+    width:100%;
+    max-height: 100%;
+    color:#808080;
+    text-overflow: ellipsis;
+    text-indent: 0px;
+}
+
+.dod_description_container p:last-child{
+  display: block;
+  float:left;
+  margin: 0px;
+  height: 25%;
+  line-height: 25px;
+  text-indent: 0px
+;
+}
+
+.dod_right_arrow_container{
+  width:5%;
+  height: 100%;
+  display:block;
+  float:left;
+  padding: 40px 0px 0px 5px;
+}
+
+.dod_right_arrow_container img{
+   width:90%;
+   height: 40%;
+   display:block;
+   float:left;
+   opacity: 0.8;
+}
+
+.dod_product-description{
+    max-height: 40px;
+    overflow: hidden;
+}
+
+
+
+.dod_regular_price{
+    color: lightgray;
+    /*font-family : "Helvetica Neue",sans-serif;*/
+    font-size:12px;
+    text-decoration: line-through;
+}
+.dod_discount_price{
+    color:red;
+    /*font-family : "Helvetica Neue",sans-serif;*/
+    font-size:14px;
+}
+
+#dod_by_email_link_wrap{
+ width:100%;
+ height:100px;
+
+}
+#dod_by_email_link_wrap img{
+  width:100%;
+  height: 100%;
+
+}
+
+
+.deals-list{
+    width: 100%;
+    list-style: none;
+
+}
+
+.deals-list > li {
+    height: 100px;
+    padding: 3px;
+}
+
+
+/*********************** css for promo pages *****************************/
+
+.promos-title{
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 20px;
+    color: #808080;
+    margin-left: 7%;
+}
+
+.promos-footer-bar{
+    border:none;
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    height:59px;
+    padding: 10px 10% 10px 10%;
+   /* z-index: 1000;*/
+    background: none repeat scroll 0 0 rgb(253, 253, 253);
+}
+
+.promos-footer-bar #sort-filter-wrap{
+    width:100%!important;
+    height:35px!important;
+}
+
+.promos-footer-bar #sort-filter-wrap button:first-child{
+    width:48%;
+    display: block;
+    float:left;
+    border-radius: 5px;
+    line-height: 100%;
+    margin: 0px !important;
+    -webkit-border-radius: 5px;
+    text-align: center;
+}
+
+.promos-footer-bar #sort-filter-wrap button:last-child{
+    width:48%;
+    display: block;
+    float:right;
+    border-radius: 5px;
+    line-height: 100%;
+    margin: 0px !important;
+    -webkit-border-radius: 5px;
+    text-align: center;
+}
+
+.promos-footer-bar #low-high-wrap{
+    width:100%!important;
+    height:35px!important;
+}
+
+.promos-footer-bar #low-high-wrap button:first-child,
+.promos-footer-bar #low-high-wrap button:last-child{
+    width:50%;
+    display: block;
+    float:left;
+    color:#ffffff;
+    text-align: center;
+    font-size: 12px!important;
+    line-height: 100%;
+    background-color: #067bb5!important;
+    border-right: none;
+    border-radius:  5px 0px 0px 5px !important;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    background-image: none;
+    margin: 0px !important;
+
+}
+.promos-footer-bar #low-high-wrap button:last-child{
+    float:right;
+    color:#000000;
+    background-color: #ffffff !important;
+    border-left: none;
+    border-radius: 0px 5px 5px 0px !important;
+    -webkit-border-radius: 0px 5px 5px 0px;
+}
+/*********************** css for promo page dialog filter partial *****************************/
+
+.deals-modal{
+    position: fixed;
+    top: 32px;
+    left: 15px;
+    right: 15px;
+    width: auto ;
+    height:100%;
+    margin: 0 ;
+    z-index: 1050;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: none;
+
+}
+
+.deals-modal-header{
+    width:100% ;
+    height:50px ;
+    background-color: #f5f5f5;
+    line-height: 50px ;
+    padding-left: 15px ;
+}
+
+.deals-modal-body{
+  width:100%;
+  overflow-y: auto;
+}
+
+.deals-modal-footer{
+    width:100%;
+    color:gray;
+    background-color: #ffffff;
+
+}
+
+.deals-modal-footer button:first-child{
+    width:32%;
+    height:35px;
+    margin-left: 32%;
+    color:gray;
+    padding: 0;
+}
+
+.deals-modal-button-bar{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width:100%;
+    height: 60px;
+    padding: 10px 15px 10px 15px ;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 -5px 10px #e1e5eb;
+    z-index: 1050;
+    -webkit-transition: bottom .2s linear;
+}
+
+.deals-modal-button-bar button:first-child{
+    float:left;
+    width:30%;
+    color:gray;
+    padding: 0;
+    background-color: #f5f5f5;
+
+}
+.deals-modal-button-bar button:last-child{
+    float:right;
+    width:65%;
+    background-color: orange;
+    background-image: none;
+    text-align: center;
+    color:#ffffff;
+
+}
+
+/*.deals-modal-backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000000;
+    opacity: 0.7;
+}*/
+
+.dialog-accordian-list{
+    list-style: none;
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+
+
+
+/*********************** css for sticky headers *****************************/
+/* Reset some list defaults for all lists */
+/* JDS -- If you need to override a style, please don't do it so generically.  This style rule chances EVERY ul in the app. */
+/*ul {*/
+#sticky-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* The main container */
+#sticky-list  {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+/* The main list */
+#sticky-list > ul {
+    height: 100%;
+    overflow: scroll;
+}
+
+/* Section headers, defined through "headlineSelector" */
+#sticky-list > ul > li strong {
+    display: block;
+   /* font-size: 1.5em;*/
+    color: #222;
+    background: #ccc;
+   /* padding: 0.5em 10px;*/
+    color: #fff;
+    text-shadow: 0px -1px 0px #000;
+    opacity: .75;
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #646262), color-stop(0.5, #484848), color-stop(0.5, #3D3D3D), color-stop(1, #4C4C4C) );
+    background-image: -moz-linear-gradient( center top, #646262 0%, #484848 50%, #3D3D3D 50%, #4C4C4C 100% );
+    background-image: linear-gradient( center top, #646262 0%, #484848 50%, #3D3D3D 50%, #4C4C4C 100% );
+    z-index: 1200;
+}
+
+/* Section headers when "sticky", defined through "stickyClass" */
+#sticky-list > ul > li.sticky strong {
+    position: absolute;
+    top: 0;
+}
+
+
+/*********************** end css for sticky headers *****************************/

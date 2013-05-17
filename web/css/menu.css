@@ -1,0 +1,155 @@
+/* # Menu styles */
+/* ## Basic Menu Item */
+/*
+```
+<div id="" class="box-test">
+<div class="nav-main-menu">
+    <div class="menu-item">Menu Item</div>
+</div>
+</div>
+```
+*/
+
+.nav-main-menu {
+   /* overflow: hidden; */
+}
+.nav-main-menu.active {
+    /*height: 0%;*/
+}
+
+.nav-main-menu {}
+.nav-main-menu.active {}
+.nav-main-menu, .nav-sub-menu, .nav-vert-menu, .nav-cat-menu, .nav-subcat-menu {
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:#f6f6f6;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+/* ## Menu Buttons */
+/* ### Normal State */
+/*
+```
+<div id="" class="box-test">
+<div class="nav-main-menu">
+    <div class="menu-item">
+        <div class="button-icon" data-icon="c"><span></span></div>
+        <div class="button-text">Menu Item</div>
+    </div>
+</div>
+</div>
+```
+*/
+.menu-item,
+.menu-item .button-icon,
+.menu-item .button-text {
+    float: left;
+    min-width:40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    position: relative;
+}
+.menu-item {
+    padding: 0 1em;
+    margin: 0;
+    color: #999;
+    border:none;
+    border-top: 1px solid rgba(255,255,255,0.95); border-bottom: 1px solid rgba(0,0,0,0.0625);
+    width: 100%;
+    line-height:50px; height:50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.menu-item .button-icon,
+.menu-item .button-text {
+    height: 44px;
+}
+.menu-item .button-icon {
+    width:40px;
+    margin: 0 10px 0 -10px;
+}
+.menu-item .button-text {
+    white-space: nowrap;
+    width: auto;
+}
+.menu-item .button-text {
+    font-size: 18px;
+    color:#666;
+}
+
+.nav-main-menu a {}
+.nav-main-menu a:active {color:#fff; background-color:#101010; border-bottom-color:#404040;}
+
+.nav-main-menu p, .nav-sub-menu p, .nav-vert-menu p, .nav-cat-menu p, .nav-subcat-menu p {
+    padding: 0 1em;
+    margin: 0;
+    color: #999;
+    position: relative;
+    top:2em;
+    height: 0;
+}
+.menu-return-bg { background-color: #dbdbdb; }
+.nav-main-menu h3 {
+    font-size: 0.9em;
+    color:#c0c0c0;
+}
+#nav-wrapper {
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.nav-sub-menu , .nav-vert-menu, .nav-cat-menu, .nav-subcat-menu{display: none;}
+.nav-sub-menu.active, .nav-vert-menu.active, .nav-cat-menu.active, .nav-subcat-menu.active {
+    display: block;
+}
+/* ### Current State */
+/*
+```
+<div id="" class="box-test">
+<div class="nav-main-menu">
+    <div class="menu-item current">
+        <div class="button-icon" data-icon="c"><span></span></div>
+        <div class="button-text">Menu Item</div>
+    </div>
+</div>
+</div>
+```
+*/
+.menu-item.current .button-text {/*color:#fff*/}
+.menu-item.current {
+    /*color: white !important;*/
+    /*background: -webkit-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -o-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -ms-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: -moz-linear-gradient(top, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);
+    background: linear-gradient(to bottom, rgb(5, 100, 147) 0%, rgb(6, 115, 170) 100%);*/
+}
+/* ### Active State */
+/*
+```
+<div id="" class="box-test">
+<div class="nav-main-menu">
+    <div class="menu-item active">
+        <div class="button-icon" data-icon="c"><span></span></div>
+        <div class="button-text">Menu Item</div>
+    </div>
+</div>
+</div>
+```
+*/
+.menu-item.active .button-text {/*color:#fff*/}
+.menu-item.active {
+    /*color: black !important; 
+    border-bottom: 1px solid #999999;
+    background: -webkit-linear-gradient(286deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    background: -o-linear-gradient(286deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    background: -ms-linear-gradient(286deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    background: -moz-linear-gradient(286deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(164deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);*/
+}

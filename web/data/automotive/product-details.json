@@ -1,0 +1,42 @@
+{
+  "id": 5,
+  "brandName": "BFGoodrich",
+  "name": "Advantage T/A - 195/65R15 91T BSW - All Season Tire",
+  "partNum": "09561700000",
+  "source": "online",
+  "productType": "online",
+  "description":"",
+  "addVals": {
+    "autoDivisionInd": "false",
+    "beanType": "ProductBean",
+    "catEntryId": "42815059",
+    "clearanceInd": "0",
+    "cutPrice": "94.99",
+    "defaultFulfillment": "DDC",
+    "directDeliveryInd": "false",
+    "displayPrice": "87.00",
+    "mapInd": "",
+    "mapPriceDesc": "",
+    "mapPriceValidDate": "",
+    "mfgPartNum": "62152",
+    "pbType": "NONVARIATION",
+    "promoInd": "1",
+    "rating": "[10153_4.0000]",
+    "resInd": "1",
+    "saleInd": "1",
+    "sellerCount": "0",
+    "skuPartNum": "04662152000",
+    "spuInd": "true",
+    "storeOrigin": "Sears",
+    "ksnVal": "04662152000",
+    "imageUrls": [{
+        "url": "images/automotive/spin_prod_790959712.jpeg"
+      },
+      {}
+    ],
+    "reviewRatingUrls": [{
+        "reviewUrls": ""
+      }
+    ]
+  }
+}

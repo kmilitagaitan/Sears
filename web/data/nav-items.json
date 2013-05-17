@@ -1,0 +1,30 @@
+{
+"automotive" : {
+    "title" : "Automotive",
+    "glyph" : "&#x3a;",
+    "class" : "sf-icon-help",
+    "action" : "subMenu",
+    "submenu":[
+      {
+        "title":"Services",
+        "icon":"",
+        "path":"#/automotive/services"
+      },
+      {
+        "title":"Tires",
+        "icon":"",
+        "path":"#/automotive/select_vehicle"
+      },
+      {
+        "title":"Batteries",
+        "icon":"",
+        "path":"#/automotive/placeholder/Batteries"
+      },
+      {
+        "title":"Brakes",
+        "icon":"",
+        "path":"#/automotive/placeholder/Brakes"
+      }
+    ]
+  }
+}
